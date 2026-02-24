@@ -20,8 +20,12 @@
 <body class="light">
 <header>
     <a href="<?php echo esc_url(site_url()) ?>" id="home-link">Jozie Jewelz Writes</a>
-    <span class="site-header__menu-trigger" tabindex="-1">menu</span>
-    <nav></nav>
+    <span class="site-header__menu-trigger mobile" tabindex="-1" id="mobile-menu-link">menu</span>
+    <nav class="desktop">
+        <a>books</a>
+        <a>bio</a>
+        <a>blog</a>
+    </nav>
 </header>
 </div>
 

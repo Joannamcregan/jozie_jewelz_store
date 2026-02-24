@@ -4,6 +4,12 @@
     <div id="main-heading-section">
         <h1>Characters that are kinda fucked-up and completely unforgettable</h1>
     </div>
+    <div id="short-stories-section" class="book-collection-section">
+        <h2>Short Stories</h2>
+    </div>
+    <div id="art-love-crime-section" class="book-collection-section">
+        <h2>Art/Love/Crime Series</h2>
+    </div>
     <div id="mode-selector-wrapper" class="light">
         <div id="mode-selector">
             <img src="<?php echo get_theme_file_uri('/img/glasses_80.png'); ?>" alt="a simple illustration of glasses with black frames" class="selection selected-glasses" data-mode="light"/>
