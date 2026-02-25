@@ -25,8 +25,7 @@
         <a>books</a>
         <a>bio</a>
         <a>blog</a>
-        <a>socials</a>
-        <a>newsletter</a>
+        <a>connect</a>
     </nav>
 </header>
 </div>
