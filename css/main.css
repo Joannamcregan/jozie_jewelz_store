@@ -160,6 +160,7 @@ header nav a{
     transform: rotate(-8deg);
     display: block;
     text-align: right;
+    text-decoration: underline;
     /* width: fit-content; */
 }
 main{
@@ -218,6 +219,17 @@ body.sepia #main-heading-section{
     0px 0px 4px rgb(60, 41, 5);
     font-size: 32px;
     text-align: center;
+    text-decoration: underline;
+}
+.book-collection-section .shelf{
+    width: 400px;
+    height: 30px;
+    border-radius: 3px;
+    margin: auto;
+}
+body.light .book-collection-section .shelf{
+    background: white;
+    box-shadow: 0px 2px 5px #333;
 }
 
 #socials-section{
