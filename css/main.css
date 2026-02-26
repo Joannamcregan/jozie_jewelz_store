@@ -159,7 +159,7 @@ header nav a{
     0px 0px 4px rgb(15, 91, 106, 0.3);
     transform: rotate(-8deg);
     display: block;
-    text-align: right;
+    text-align: center;
     text-decoration: underline;
     /* width: fit-content; */
 }
@@ -219,7 +219,6 @@ body.sepia #main-heading-section{
     0px 0px 4px rgb(60, 41, 5);
     font-size: 32px;
     text-align: center;
-    text-decoration: underline;
 }
 .book-section{
     display: flex;
@@ -254,6 +253,7 @@ body.light .book-shelf-section .shelf{
     padding: 20px;
     height: fit-content;
     width: fit-content;
+    position: relative;
 }
 .book-sticker{
     min-height: 120px;
@@ -267,6 +267,46 @@ body.light .book-shelf-section .shelf{
 .book-sticker p{
     padding: 5px;
     margin: 5px;
+}
+.top-left-tape{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 15px;
+    width: 40px;
+    background: rgba(218, 206, 163, 0.45);
+    transform: rotate(-30deg);
+    z-index: 900;
+}
+.top-right-tape{
+    position: absolute;
+    top: 18px;
+    right: 2px;
+    height: 15px;
+    width: 40px;
+    background: rgba(218, 206, 163, 0.45);
+    transform: rotate(25deg);
+    z-index: 900;
+}
+.bottom-right-tape{
+    position: absolute;
+    bottom: 18px;
+    right: 9px;
+    height: 15px;
+    width: 40px;
+    background: rgba(218, 206, 163, 0.45);
+    transform: rotate(-25deg);
+    z-index: 900;
+}
+.bottom-left-tape{
+    position: absolute;
+    bottom: 17px;
+    left: 5px;
+    height: 15px;
+    width: 35px;
+    background: rgba(218, 206, 163, 0.45);
+    transform: rotate(33deg);
+    z-index: 900;
 }
 #her-first-sticker{
     transform: rotate(1deg);
