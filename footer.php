@@ -3,9 +3,11 @@
         <p id="privacy-policy-link">privacy policy</p>
         <p  class="cookies--learn-more" id="cookie-policy-link">cookie policy</p>
     </div>
-    <div id="copyright-section">
+    <div id="copyright-section" class="name-sticker">
         <p id="copyright">copyright</p>
-        <p id="copyright-year">2026</p>
+        <div class="name-sticker-main">
+            <p id="copyright-year">2026</p>
+        </div>
     </div>
 </footer>
 
