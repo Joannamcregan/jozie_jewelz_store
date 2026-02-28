@@ -125,7 +125,7 @@ strong{
     top: -10px;
     height: 150px;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 204, 200, 0.7), rgba(255, 204, 199, 0));
+    background-image: linear-gradient(rgba(255, 152, 152, 0.4), rgba(255, 204, 199, 0));
     margin: 0px;
     padding: 0px;
 }
@@ -135,7 +135,7 @@ strong{
     height: 15px;
     width: 100%;
     background: rgba(255, 255, 255, 0);
-    border-bottom: 17px dotted rgba(255, 237, 235, 0.9);
+    border-bottom: 17px dotted rgba(255, 237, 235, 0.6);
     margin: 0px;
     padding: 0px;
 }
@@ -277,6 +277,7 @@ body.light .book-shelf-section .shelf{
     height: fit-content;
     width: fit-content;
     position: relative;
+    font-size: 16px;
 }
 .book-flyer{
     min-height: 120px;
@@ -475,11 +476,17 @@ body.light #newsletter-section input[type="email"]{
     padding: 10px;
     border-radius: 20px;
 }
+footer{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 #copyright-section{
-    margin: 10px auto;
+    padding: 20px;
     width: fit-content;
     font-family: 'swelly', sans-serif;
-    /* transform: translatex(120%); */
  }
 /* @media screen and (max-width: 460px) {
     #copyright-section{
@@ -497,10 +504,10 @@ body.light #newsletter-section input[type="email"]{
     font-size: 35px;
 }
 body.light #copyright-section{
+    color: rgb(0, 65, 34);
     text-shadow: 
-    0px 0px 3px rgb(142, 255, 255), 
-    0px 0px 7px rgb(179, 221, 253),
-    0px 0px 11px rgb(179, 221, 253);
+    0px 0px 3px rgb(0, 122, 63), 
+    0px 0px 7px rgba(0, 122, 63, 0.4)
 }
 body.dark #copyright-section{
     text-shadow: 
@@ -522,25 +529,32 @@ body.sepia #copyright-section{
 }
 #policy-section{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    font-family: 'angelina', serif;
+    text-decoration: underline;
+    font-size: 32px;
 }
 #policy-section p{
-    padding: 5px 10px 10px 10px;
     margin: 0px 10px;
     border-radius: 5px;
 }
-body.dark #policy-section p{
-    background: rgb(18, 18, 18);
-    box-shadow: 0px 0px 3px rgba(252, 155, 114, 0.5), 0px 0px 7px rgba(252, 155, 114, 0.5), 0px 0px 10px rgba(252, 222, 114, 0.3);
+#privacy-policy-link{
+    padding-left: 40px;
 }
-body.sepia #policy-section p{
-    background: #faebdb;
-    box-shadow: 0 0 10px 6px #dbc4b7;
+body.light #privacy-policy-link{
+    color: rgb(57, 0, 11);
+    text-shadow: 
+    0px 0px 1px rgb(107, 0, 21), 
+    0px 0px 5px rgba(107, 0, 21, 0.5);
 }
-body.light #policy-section p{
-    background: rgb(255, 254, 254);
-    box-shadow: 0px 0px 3px rgba(255, 212, 194, 0.7), 0px 0px 7px rgba(255, 212, 194, 0.7), 0px 0px 10px rgba(253, 235, 171, 0.5);
-
+#cookie-policy-link{
+    padding-left: 10px;
+}
+body.light #cookie-policy-link{
+    color: rgb(57, 20, 0);
+    text-shadow: 
+    0px 0px 1px rgb(140, 49, 0), 
+    0px 0px 5px rgba(140, 49, 0, 0.5);
 }
 .policy-overlay{
     position: fixed;
