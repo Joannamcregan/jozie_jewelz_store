@@ -3,11 +3,13 @@
 if ( !defined( 'ABSPATH' ) ) exit;
 
 function site_files(){
+    wp_enqueue_script('umbrella-js', get_template_directory_uri() . 'umbrella.min.js', array(), '1.0.0', true);
+    wp_enqueue_script('custom-js', get_theme_file_uri('/build/index.js'), array('umbrella-js'), '1.0', true);
     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css', false, '', 'all');
-    // wp_localize_script('main-ebook-marketplace-js', 'marketplaceData', array(
-    //     'root_url' => get_site_url(),        
-    //     'nonce' => wp_create_nonce('wp_rest')
-    // ));
+    wp_localize_script('custom-js', 'customData', array(
+        'root_url' => get_site_url(),        
+        'nonce' => wp_create_nonce('wp_rest')
+    ));
 }
 add_action('wp_enqueue_scripts','site_files');
 /* Disable WordPress Admin Bar for all users */
