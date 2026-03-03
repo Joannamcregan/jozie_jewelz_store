@@ -300,7 +300,7 @@ body.light .book-shelf-section .shelf{
     box-shadow: #5c5c5c 0px 2px 5px, #5c5c5c 0px 4px 10px;
 }
 body.sepia .book-shelf-section .shelf{
-    background: #c1b6a6;
+    background: #c3af9f;
     box-shadow: #4f4f4f 0px 2px 5px, #4f4f4f 0px 4px 10px;
 }
 .book-flyer-section, .book-sticker-section{
@@ -378,6 +378,9 @@ body.sepia .book-shelf-section .shelf{
 }
 body.light #her-first-flyer{
     background: rgb(186, 234, 186);
+}
+body.sepia #her-first-flyer{
+    background: rgb(195, 217, 188);
 }
 body.light #wtaak-sticker{
     border-radius: 50px;
@@ -581,6 +584,13 @@ body.light #privacy-policy-link{
     0px 0px 1px rgb(107, 0, 21), 
     0px 0px 5px rgba(107, 0, 21, 0.5);
 }
+body.sepia #privacy-policy-link{
+    color: rgb(79, 42, 28);
+    text-shadow: 
+    0px 0px 1px rgb(79, 47, 35), 
+    0px 0px 5px rgba(79, 47, 35, 0.5);
+}
+/* #4f3b26 */
 #cookie-policy-link{
     padding-left: 10px;
 }
