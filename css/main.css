@@ -84,9 +84,9 @@ body.dark{
 }
 body.sepia{
   --s: 81px; /* control the size*/
-  --c1: #f3e5d7;
-  --c2: #f3e2d7;
-  --c3: #f4e9dd;
+  --c1: #e2d8cd;
+  --c2: #e9d9cf;
+  --c3: #ece4db;
   
   --p:at 45% 40%,#0000 75%,;
   --g1:conic-gradient(var(--p) var(--c1) 0);
@@ -125,7 +125,6 @@ strong{
     top: -10px;
     height: 250px;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 228, 190, 0.6), rgba(255, 228, 190, 0.4), rgba(255, 228, 190, 0));
     margin: 0px;
     padding: 0px;
 }
@@ -134,10 +133,22 @@ strong{
     top: 0px;
     height: 15px;
     width: 100%;
-    background: rgba(255, 255, 255, 0);
-    border-bottom: 17px dotted rgba(255, 246, 233, 0.6);
     margin: 0px;
     padding: 0px;
+}
+body.light #ceiling{
+    background-image: linear-gradient(rgba(255, 228, 190, 0.6), rgba(255, 228, 190, 0.4), rgba(255, 228, 190, 0));
+}
+body.light #ceiling-light{
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 17px dotted rgba(255, 253, 250, 0.4);
+}
+body.sepia #ceiling{
+    background-image: linear-gradient(rgba(255, 203, 131, 0.5), rgba(255, 203, 131, 0.3), rgba(255, 203, 131, 0));
+}
+body.sepia #ceiling-light{
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 17px dotted rgba(255, 234, 206, 0.6);
 }
 header{
     display: flex;
@@ -150,20 +161,24 @@ header{
     text-decoration: none;
     font-family: 'handwritten-text', serif;
     font-size: 36px;
-    color: rgb(104, 27, 104);
+}
+body.light #home-link{
+    color: rgb(76, 0, 76);
     text-shadow: 
-    0px 0px 3px rgb(73, 27, 104, 0.7), 
-    0px 0px 7px rgb(73, 27, 104, 0.5),
-    0px 0px 11px rgb(73, 27, 104, 0.3);
+    0px 0px 3px rgba(48, 0, 81, 0.7), 
+    0px 0px 7px rgb(57, 16, 85, 0.5),
+    0px 0px 11px rgb(57, 16, 85, 0.3);
+}
+body.sepia #home-link{
+    color: #411b37;
+    text-shadow: 
+    0px 0px 3px rgb(52, 29, 77, 0.7), 
+    0px 0px 7px rgb(52, 29, 77, 0.5),
+    0px 0px 11px rgb(52, 29, 77, 0.3);
 }
 #mobile-menu-link{
     font-family: "amatic", sans-serif;
     font-size: 34px;
-    color: rgb(15, 103, 106);
-    text-shadow: 
-    0px 0px 2px rgb(15, 91, 106, 0.7), 
-    0px 0px 4px rgb(15, 91, 106, 0.5),
-    0px 0px 4px rgb(15, 91, 106, 0.3);
     transform: rotate(-8deg);
     width: fit-content;
     margin-top: -30px;
@@ -175,17 +190,26 @@ header nav{
 header nav a{
     font-family: "amatic", sans-serif;
     font-size: 34px;
+    transform: rotate(-8deg);
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+}
+body.light #mobile-menu-link, body.light header nav a{
     color: rgb(15, 103, 106);
     text-shadow: 
     0px 0px 2px rgb(15, 91, 106, 0.7), 
     0px 0px 4px rgb(15, 91, 106, 0.5),
     0px 0px 4px rgb(15, 91, 106, 0.3);
-    transform: rotate(-8deg);
-    display: block;
-    text-align: center;
-    text-decoration: underline;
-    /* width: fit-content; */
 }
+body.sepia #mobile-menu-link, body.sepia header nav a{
+    color: rgb(27, 60, 53);
+    text-shadow: 
+    0px 0px 2px rgb(27, 60, 53, 0.7), 
+    0px 0px 4px rgb(27, 60, 53, 0.5),
+    0px 0px 4px rgb(27, 60, 53, 0.3);
+}
+/* #4f3b26 */
 main{
     max-width: 900px;
     margin: auto;
@@ -229,10 +253,11 @@ body.dark #main-heading-section{
     0px 0px 11px rgb(0, 0, 0);
 }
 body.sepia #main-heading-section{
+    color: rgb(39, 21, 69);
     text-shadow: 
-    0px 0px 3px #e6cdb6, 
-    0px 0px 7px #dccec4,
-    0px 0px 11px #ded5c9;
+    0px 0px 3px rgba(31, 24, 87, 0.7), 
+    0px 0px 7px rgba(24, 53, 87, 0.5),
+    0px 0px 11px rgba(24, 53, 87, 0.3);
 }
 .book-collection-section h2{
     font-family: 'rocksalt', serif;
