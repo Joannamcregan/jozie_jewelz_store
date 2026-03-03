@@ -299,6 +299,10 @@ body.light .book-shelf-section .shelf{
     background: rgb(239, 238, 237);
     box-shadow: #5c5c5c 0px 2px 5px, #5c5c5c 0px 4px 10px;
 }
+body.sepia .book-shelf-section .shelf{
+    background: #c1b6a6;
+    box-shadow: #4f4f4f 0px 2px 5px, #4f4f4f 0px 4px 10px;
+}
 .book-flyer-section, .book-sticker-section{
     padding: 20px;
     height: fit-content;
@@ -379,6 +383,11 @@ body.light #wtaak-sticker{
     border-radius: 50px;
     border: solid 5px white;
     background-image: linear-gradient(to bottom right, #b88ced, #f291f8, #5a8fab)
+}
+body.sepia #wtaak-sticker{
+    border-radius: 50px;
+    border: solid 5px white;
+    background-image: linear-gradient(to bottom right, #d5bcf4, #f8c1fc, #7fa8be)
 }
 #novels-section{
     margin-bottom: 60px;
