@@ -150,6 +150,13 @@ body.sepia #ceiling-light{
     background: rgba(255, 255, 255, 0);
     border-bottom: 17px dotted rgba(255, 241, 222, 0.6);
 }
+body.dark #ceiling{
+    background-image: linear-gradient(rgba(152, 35, 76, 0.6), rgba(152, 35, 76, 0.4), rgba(152, 35, 76, 0));
+}
+body.dark #ceiling-light{
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 17px dotted rgba(255, 0, 89, 0.2);
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -175,6 +182,13 @@ body.sepia #home-link{
     0px 0px 3px rgb(52, 29, 77, 0.7), 
     0px 0px 7px rgb(52, 29, 77, 0.5),
     0px 0px 11px rgb(52, 29, 77, 0.3);
+}
+body.dark #home-link{
+    color: rgb(255, 74, 132);
+    text-shadow: 
+    0px 0px 3px rgba(167, 0, 53, 0.7), 
+    0px 0px 7px rgb(167, 0, 53, 0.5),
+    0px 0px 11px rgb(167, 0, 53, 0.3);
 }
 #mobile-menu-link{
     font-family: "amatic", sans-serif;
@@ -209,7 +223,13 @@ body.sepia #mobile-menu-link, body.sepia header nav a{
     0px 0px 4px rgb(27, 60, 53, 0.5),
     0px 0px 4px rgb(27, 60, 53, 0.3);
 }
-/* #4f3b26 */
+body.dark #mobile-menu-link, body.dark header nav a{
+    color: rgb(101, 250, 255);
+    text-shadow: 
+    0px 0px 2px rgba(0, 142, 171, 0.7), 
+    0px 0px 4px rgb(0, 142, 171, 0.5),
+    0px 0px 4px rgb(0, 142, 171, 0.3);
+}
 main{
     max-width: 900px;
     margin: auto;
@@ -243,14 +263,15 @@ body.light #main-heading-section{
     color: rgb(2, 8, 76);
     text-shadow: 
     0px 0px 3px rgba(5, 14, 116, 0.7), 
-    0px 0px 7px rgb(79, 20, 181, 0.5),
-    0px 0px 11px rgb(79, 20, 181, 0.3);
+    0px 0px 7px rgba(79, 20, 181, 0.5),
+    0px 0px 11px rgba(79, 20, 181, 0.3);
 }
 body.dark #main-heading-section{
-    text-shadow: 
-    0px 0px 3px rgb(250, 27, 98), 
-    0px 0px 7px rgb(102, 27, 51),
-    0px 0px 11px rgb(0, 0, 0);
+    color: rgb(255, 160, 96);
+    text-shadow:
+    0px 0px 3px rgb(184, 86, 0), 
+    0px 0px 7px rgba(184, 86, 0, 0),
+    0px 0px 11px rgba(184, 86, 0, 0);
 }
 body.sepia #main-heading-section{
     color: rgb(39, 21, 69);
@@ -261,12 +282,26 @@ body.sepia #main-heading-section{
 }
 .book-collection-section h2{
     font-family: 'rocksalt', serif;
+    font-size: 32px;
+    text-align: center;
+}
+body.light .book-collection-section h2{
     color: rgb(31, 20, 0);
     text-shadow: 
     0px 0px 2px rgb(31, 20, 7), 
     0px 0px 4px rgb(60, 41, 5);
-    font-size: 32px;
-    text-align: center;
+}
+body.sepia .book-collection-section h2{
+    color: rgb(54, 35, 0);
+    text-shadow: 
+    0px 0px 2px rgb(60, 39, 12), 
+    0px 0px 4px rgb(72, 49, 6);
+}
+body.dark .book-collection-section h2{
+    color: rgb(225, 163, 47);
+    text-shadow: 
+    0px 0px 2px rgb(214, 136, 34), 
+    0px 0px 4px rgb(201, 143, 35);
 }
 .book-section{
     display: flex;
