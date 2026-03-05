@@ -298,10 +298,10 @@ body.sepia .book-collection-section h2{
     0px 0px 4px rgb(72, 49, 6);
 }
 body.dark .book-collection-section h2{
-    color: rgb(225, 163, 47);
+    color: rgb(98, 255, 185);
     text-shadow: 
-    0px 0px 2px rgb(214, 136, 34), 
-    0px 0px 4px rgb(201, 143, 35);
+    0px 0px 2px rgb(0, 169, 113), 
+    0px 0px 4px rgb(0, 56, 37);
 }
 .book-section{
     display: flex;
@@ -328,6 +328,13 @@ body.sepia .book-section .book-cover{
     -1px 1px 5px #4f4f4f,
     -2px 0px 10px #4f4f4f;
 }
+body.dark .book-section .book-cover{
+    box-shadow: 
+    1px -1px 5px #070707,
+    2px -2px 10px #070707,
+    -1px 1px 5px #070707,
+    -2px 0px 10px #070707;
+}
 .book-shelf-section{
     width: fit-content;
 }
@@ -344,6 +351,10 @@ body.light .book-shelf-section .shelf{
 body.sepia .book-shelf-section .shelf{
     background: #c3af9f;
     box-shadow: #4f4f4f 0px 2px 5px, #4f4f4f 0px 4px 10px;
+}
+body.dark .book-shelf-section .shelf{
+    background-image: linear-gradient(to right, rgb(51, 22, 24), rgb(78, 18, 18), rgb(51, 22, 24));
+    box-shadow: #070707 0px 2px 5px, #070707 0px 4px 10px;
 }
 .book-flyer-section, .book-sticker-section{
     padding: 20px;
@@ -423,6 +434,9 @@ body.light #her-first-flyer{
 }
 body.sepia #her-first-flyer{
     background: rgb(195, 217, 188);
+}
+body.dark #her-first-flyer{
+    background: rgb(64, 0, 35);
 }
 body.light #wtaak-sticker{
     border-radius: 50px;
