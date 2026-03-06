@@ -648,14 +648,14 @@ body.sepia .name-sticker-main{
     background: rgb(251, 247, 240);
 }
 body.dark .name-sticker{
-    background: rgb(0, 36, 36);
-    border: solid rgb(0, 36, 36) 2px;
+    background: rgb(0, 62, 62);
+    border: solid rgb(0, 62, 62) 2px;
     box-shadow: 
     0.5px -0.5px 2px rgba(7, 7, 7, 0.8),
     -0.5px 0.5px 2px rgba(7, 7, 7, 0.8);
 }
 body.dark .name-sticker-main{
-    background: rgb(36, 19, 48);
+    background: rgb(65, 35, 87);
     color: white;
 }
 #copyright-year{
@@ -701,7 +701,13 @@ body.sepia #privacy-policy-link{
     0px 0px 1px rgb(79, 47, 35), 
     0px 0px 5px rgba(79, 47, 35, 0.5);
 }
-/* #4f3b26 */
+body.dark #privacy-policy-link{
+    color: rgb(185, 0, 71);
+    text-shadow: 
+    0px 0px 1px rgb(90, 0, 34), 
+    0px 0px 5px rgba(90, 0, 34, 0.5);
+    text-decoration: underline;
+}
 #cookie-policy-link{
     padding-left: 10px;
 }
@@ -716,6 +722,13 @@ body.sepia #cookie-policy-link{
     text-shadow: 
     0px 0px 1px rgb(87, 67, 46), 
     0px 0px 5px rgba(87, 67, 46, 0.5);
+}
+body.dark #cookie-policy-link{
+    color: rgb(185, 130, 0);
+    text-shadow: 
+    0px 0px 1px rgb(137, 96, 0), 
+    0px 0px 5px rgba(137, 96, 0, 0.5);
+    text-decoration: underline;
 }
 .policy-overlay{
     position: fixed;

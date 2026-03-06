@@ -16,10 +16,10 @@
                     <p>When the good girl meets the bad guy and neither is quite what the other expected...</p>
                     <p><a>read now</a></p>
                 </div>
-                <div class="top-left-tape"></div>
-                <div class="top-right-tape"></div>
-                <div class="bottom-left-tape"></div>
-                <div class="bottom-right-tape"></div>
+                <div class="top-left-tape tape"></div>
+                <div class="top-right-tape tape"></div>
+                <div class="bottom-left-tape tape"></div>
+                <div class="bottom-right-tape tape"></div>
             </div>
         </div>
     </div>
