@@ -392,7 +392,6 @@ body.dark .book-shelf-section .shelf{
     left: 7px;
     height: 15px;
     width: 40px;
-    background: rgba(218, 206, 163, 0.45);
     transform: rotate(-30deg);
     z-index: 900;
 }
@@ -402,7 +401,6 @@ body.dark .book-shelf-section .shelf{
     right: 2px;
     height: 15px;
     width: 40px;
-    background: rgba(218, 206, 163, 0.45);
     transform: rotate(25deg);
     z-index: 900;
 }
@@ -412,7 +410,6 @@ body.dark .book-shelf-section .shelf{
     right: 9px;
     height: 15px;
     width: 40px;
-    background: rgba(218, 206, 163, 0.45);
     transform: rotate(-25deg);
     z-index: 900;
 }
@@ -422,31 +419,64 @@ body.dark .book-shelf-section .shelf{
     left: 5px;
     height: 15px;
     width: 35px;
-    background: rgba(218, 206, 163, 0.45);
     transform: rotate(33deg);
     z-index: 900;
+}
+body.light .tape{
+    background: rgba(218, 206, 163, 0.3);
+}
+body.sepia .tape{
+    background: rgba(218, 206, 163, 0.45);
+}
+body.dark .tape{
+    background: rgba(56, 53, 42, 0.45);
 }
 #her-first-flyer{
     transform: rotate(1deg);
 }
 body.light #her-first-flyer{
     background: rgb(186, 234, 186);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(92, 92, 92, 0.2),
+    -0px 0.5px 2px rgba(92, 92, 92, 0.2);
 }
 body.sepia #her-first-flyer{
     background: rgb(195, 217, 188);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(79, 79, 79, 0.2),
+    -0px 0.5px 2px rgba(79, 79, 79, 0.2);
 }
 body.dark #her-first-flyer{
-    background: rgb(64, 0, 35);
+    background: rgb(64, 31, 0);
+    color: rgb(244, 244, 237);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(7, 7, 7, 0.4),
+    -0px 0.5px 2px rgba(7, 7, 7, 0.4);
 }
 body.light #wtaak-sticker{
     border-radius: 50px;
     border: solid 5px white;
-    background-image: linear-gradient(to bottom right, #b88ced, #f291f8, #5a8fab)
+    background-image: linear-gradient(to bottom right, #b88ced, #f291f8, #5a8fab);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(92, 92, 92, 0.3),
+    -0px 0.5px 2px rgba(92, 92, 92, 0.3);
 }
 body.sepia #wtaak-sticker{
     border-radius: 50px;
     border: solid 5px white;
-    background-image: linear-gradient(to bottom right, #d5bcf4, #f8c1fc, #7fa8be)
+    background-image: linear-gradient(to bottom right, #d5bcf4, #f8c1fc, #7fa8be);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(79, 79, 79, 0.4),
+    -0px 0.5px 2px rgba(79, 79, 79, 0.4);
+}
+body.dark #wtaak-sticker{
+    border-radius: 50px;
+    border: solid 5px rgb(18, 18, 18);
+    background-image: linear-gradient(to bottom right, #2b015f, #59015e, #002f48);
+    color: rgb(222, 222, 222);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(7, 7, 7, 0.6),
+    -0px 0.5px 2px rgba(7, 7, 7, 0.6);
 }
 #novels-section{
     margin-bottom: 60px;
@@ -599,6 +629,9 @@ footer{
 body.light .name-sticker{
     background: rgb(89, 168, 169);
     border: solid rgb(89, 168, 169) 2px;
+    box-shadow: 
+    0.5px -0.5px 2px rgba(92, 92, 92, 0.3),
+    -0.5px 0.5px 2px rgba(92, 92, 92, 0.3);
 }
 body.light .name-sticker-main{
     background: white;
@@ -606,10 +639,24 @@ body.light .name-sticker-main{
 body.sepia .name-sticker{
     background: rgb(119, 188, 174);
     border: solid rgb(119, 188, 174) 2px;
+    box-shadow: 
+    0.5px -0.5px 2px rgba(79, 79, 79, 0.7),
+    -0.5px 0.5px 2px rgba(79, 79, 79, 0.7);
     color: black;
 }
 body.sepia .name-sticker-main{
     background: rgb(251, 247, 240);
+}
+body.dark .name-sticker{
+    background: rgb(0, 36, 36);
+    border: solid rgb(0, 36, 36) 2px;
+    box-shadow: 
+    0.5px -0.5px 2px rgba(7, 7, 7, 0.8),
+    -0.5px 0.5px 2px rgba(7, 7, 7, 0.8);
+}
+body.dark .name-sticker-main{
+    background: rgb(36, 19, 48);
+    color: white;
 }
 #copyright-year{
     font-family: 'rocksalt', serif;
