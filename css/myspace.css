@@ -1,0 +1,44 @@
+body.myspace{
+  --s: 40px; /* control the size*/
+  --c1: #cc2b99;
+  --c2: #cc2b89;
+  --c3: #b3318c;
+  
+  --p:at 45% 40%,#0000 75%,;
+  --g1:conic-gradient(var(--p) var(--c1) 0);
+  --g2:conic-gradient(var(--p) var(--c2) 0);
+  background:
+    var(--g1),var(--g2) calc(2*var(--s)) 0,
+    var(--g2) calc(3*var(--s)) var(--s),
+    var(--g1) var(--s) var(--s) var(--c3);
+  background-size: calc(4*var(--s)) calc(2*var(--s));
+  padding: 0px 20px 20px 20px;
+}
+body.myspace header{
+    background-image: linear-gradient(rgb(56, 10, 48), rgb(56, 10, 48));
+    border-left: double #b3318c 15px;
+    border-bottom: double #b3318c 15px;
+    border-right: double #b3318c 15px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 0px 10px;
+    margin: 0px;
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+body.myspace header nav{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-items: center;
+}
+body.myspace header a, body.myspace header span{
+    transform: rotate(0deg);
+    color: rgb(255, 198, 185);
+    padding: 10px 10px;
+}
+
+/* #cc2b79 rgb(144, 1, 118) rgb(92, 8, 76) */

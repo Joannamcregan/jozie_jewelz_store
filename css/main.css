@@ -724,10 +724,10 @@ body.sepia #cookie-policy-link{
     0px 0px 5px rgba(87, 67, 46, 0.5);
 }
 body.dark #cookie-policy-link{
-    color: rgb(185, 130, 0);
+    color: rgb(185, 123, 0);
     text-shadow: 
-    0px 0px 1px rgb(137, 96, 0), 
-    0px 0px 5px rgba(137, 96, 0, 0.5);
+    0px 0px 1px rgb(137, 84, 0), 
+    0px 0px 5px rgba(137, 84, 0, 0.5);
     text-decoration: underline;
 }
 .policy-overlay{
