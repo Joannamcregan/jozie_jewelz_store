@@ -19,10 +19,16 @@
 </head>
 <body class="light">
 <header>
-    <a href="<?php echo esc_url(site_url()) ?>" id="home-link">Jozie Jewelz Writes</a>
+    <div id="main-heading-link-section">
+        <a href="<?php echo esc_url(site_url()) ?>" id="main-heading-home-link">Jozie Jewelz Writes</a>
+        <div id="main-heading-writing-links">
+            <a>novels</a>
+            <a id="stories-link">stories</a>
+            <a>e-zines</a>
+        </div>
+    </div>
     <span class="site-header__menu-trigger mobile" tabindex="-1" id="mobile-menu-link">menu</span>
     <nav class="desktop">
-        <a>books</a>
         <a>bio</a>
         <a>blog</a>
         <a>connect</a>

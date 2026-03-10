@@ -1,11 +1,8 @@
 <?php get_header();
 
 ?><main>
-    <div id="main-heading-section">
-        <h1>Characters that are kinda fucked-up and completely unforgettable</h1>
-    </div>
     <div id="short-stories-section" class="book-collection-section">
-        <h2>Short Stories</h2>
+        <h1>Short Stories</h1>
         <div class="book-section">
             <div class="book-shelf-section">
                 <img src="<?php echo get_theme_file_uri('/img/her_first_cover_200.jpg'); ?>" alt="In the cover for Her First, a short story by Jozie Jewelz, a blurred image of a young, white man in a t-shirt and baseball cap appears on the screen of a phone, which rests in the manicured hands of a young, white woman." class="book-cover" />
@@ -24,7 +21,7 @@
         </div>
     </div>
     <div id="novels-section" class="book-collection-section">
-        <h2>Novels</h2>
+        <h1>Novels</h1>
         <div class="book-section">
             <div class="book-sticker-section">
                 <div class="book-sticker" id="wtaak-sticker">

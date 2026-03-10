@@ -11,7 +11,7 @@
 <body class="myspace">
 <header>
     <nav>
-        <a>books</a>
+        <a>home</a>
         <a>blog</a>
         <a>connect</a>
     </nav>
