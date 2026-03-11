@@ -10,13 +10,27 @@
             </div>
             <div class="book-flyer-section">
                 <div class="book-flyer" id="her-first-flyer">
-                    <p>When the good girl meets the bad guy and neither is quite what the other expected...</p>
-                    <p><a>read now</a></p>
+                    <p>In a time when terrible things are being done to innocent people, a good girl meets a bad guy and neither is quite what the other expected...</p>
                 </div>
                 <div class="top-left-tape tape"></div>
                 <div class="top-right-tape tape"></div>
                 <div class="bottom-left-tape tape"></div>
                 <div class="bottom-right-tape tape"></div>
+            </div>
+        </div>
+        <div class="book-section">
+            <div class="book-flyer-section">
+                <div class="book-flyer" id="behind-your-eyes-flyer">
+                    <p>A young woman and her boyfriend enjoy each other's company in an abandoned apartment building the day before a deadly storm is set to hit.</p>
+                </div>
+                <div class="top-left-tape tape"></div>
+                <div class="top-right-tape tape"></div>
+                <div class="bottom-left-tape tape"></div>
+                <div class="bottom-right-tape tape"></div>
+            </div>
+            <div class="book-shelf-section">
+                <img src="<?php echo get_theme_file_uri('/img/behind_your_eyes_cover_200.jpg'); ?>" alt="In the cover for Behind Your Eyes, a short story by Jozie Jewelz, a silver locket hangs on a silver chain." class="book-cover" />
+                <div class="shelf"></div>
             </div>
         </div>
     </div>

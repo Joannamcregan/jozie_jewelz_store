@@ -411,7 +411,14 @@ body.dark .book-shelf-section .shelf{
     background-image: linear-gradient(to right, rgb(51, 22, 24), rgb(78, 18, 18), rgb(51, 22, 24));
     box-shadow: #000000 0px 2px 5px, #000000 0px 4px 10px;
 }
-.book-flyer-section, .book-sticker-section{
+.book-flyer-section{
+    padding: 20px;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    font-size: 16px;
+}
+.book-sticker-section{
     padding: 20px 20px 40px 20px;
     height: fit-content;
     width: fit-content;
@@ -503,6 +510,28 @@ body.sepia #her-first-flyer{
 }
 body.dark #her-first-flyer{
     background: rgb(64, 31, 0);
+    color: rgb(244, 244, 237);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(7, 7, 7, 0.4),
+    -0px 0.5px 2px rgba(7, 7, 7, 0.4);
+}
+#behind-your-eyes-flyer{
+    transform: rotate(0deg);
+}
+body.light #behind-your-eyes-flyer{
+    background: rgb(235, 225, 205);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(92, 92, 92, 0.2),
+    -0px 0.5px 2px rgba(92, 92, 92, 0.2);
+}
+body.sepia #behind-your-eyes-flyer{
+    background: rgb(224, 209, 180);
+    box-shadow: 
+    0.5px -0.5px 2px rgba(79, 79, 79, 0.2),
+    -0px 0.5px 2px rgba(79, 79, 79, 0.2);
+}
+body.dark #behind-your-eyes-flyer{
+    background: rgb(58, 45, 18);
     color: rgb(244, 244, 237);
     box-shadow: 
     0.5px -0.5px 2px rgba(7, 7, 7, 0.4),
