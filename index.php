@@ -21,7 +21,7 @@
         <div class="book-section">
             <div class="book-flyer-section">
                 <div class="book-flyer" id="behind-your-eyes-flyer">
-                    <p>A young woman and her boyfriend enjoy each other's company in an abandoned apartment building the day before a deadly storm is set to hit.</p>
+                    <p>A young woman and her boyfriend enjoy each other's company in an abandoned apartment building the day before a deadly storm is expected.</p>
                 </div>
                 <div class="top-left-tape tape"></div>
                 <div class="top-right-tape tape"></div>

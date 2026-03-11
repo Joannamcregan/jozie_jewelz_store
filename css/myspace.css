@@ -13,9 +13,11 @@ body.myspace{
     var(--g1) var(--s) var(--s) var(--c3);
   background-size: calc(4*var(--s)) calc(2*var(--s));
   padding: 0px 20px 20px 20px;
+  position: relative;
+  border: solid rgba(255, 255, 255, 0) 1px;
 }
 body.myspace header{
-    background-image: linear-gradient(rgb(56, 10, 48), rgb(56, 10, 48));
+    background: rgb(56, 10, 48);
     border-left: double #b3318c 15px;
     border-bottom: double #b3318c 15px;
     border-right: double #b3318c 15px;
@@ -26,7 +28,7 @@ body.myspace header{
     margin: 0px;
     width: fit-content;
     position: absolute;
-    top: 0px;
+    top: -1px;
     right: 20px;
 }
 body.myspace header nav{
@@ -39,6 +41,32 @@ body.myspace header a, body.myspace header span{
     transform: rotate(0deg);
     color: rgb(255, 198, 185);
     padding: 10px 10px;
+    opacity: 1;
+}
+#myspace-main{
+    display: grid;
+    max-width: 1000px;
+    margin: 80px auto;
+}
+#basic-info{
+    background: rgb(56, 10, 48);
+    border: double #b3318c 15px;
+    color: rgb(255, 198, 185);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 0px;
+    width: fit-content;
+}
+#basic-info h1{
+    margin: 0px;
+}
+#basic-info img{
+    width: 200px;
+    height: auto;
+}
+#basic-info p{
+    margin: 5px 0px;
+    text-align: right;
 }
 
 /* #cc2b79 rgb(144, 1, 118) rgb(92, 8, 76) */

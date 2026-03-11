@@ -11,9 +11,10 @@
 <body class="myspace">
 <header>
     <nav>
-        <a>home</a>
+        <a>stories</a>
+        <a>novels</a>
+        <a>e-zines</a>
         <a>blog</a>
-        <a>connect</a>
     </nav>
 </header>
 </div>
