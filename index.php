@@ -1,7 +1,7 @@
 <?php get_header();
 
 ?><main>
-    <div id="short-stories-section" class="book-collection-section">
+    <div id="short-stories-section" class="book-collection-section book-collection--left">
         <h1>Short Stories</h1>
         <div class="book-section">
             <div class="book-shelf-section">
@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div id="novels-section" class="book-collection-section">
+    <div id="novels-section" class="book-collection-section book-collection--right">
         <h1>Novels</h1>
         <div class="book-section">
             <div class="book-sticker-section">

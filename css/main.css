@@ -9,6 +9,11 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'playball';
+    src: url('../fonts/Playball-Regular.ttf');
+    font-display: swap;
+}
+@font-face {
     font-family: 'swelly';
     src: url('../fonts/Swelly-K7GDp.ttf');
 }
@@ -137,7 +142,7 @@ strong{
     padding: 0px;
 }
 body.light #ceiling{
-    background-image: linear-gradient(rgba(255, 248, 206, 0.9), rgba(255, 248, 206, 0.7), rgba(255, 248, 206, 0));
+    background-image: linear-gradient(rgba(255, 248, 206, 0.8), rgba(255, 248, 206, 0.6), rgba(255, 248, 206, 0));
 }
 body.light #ceiling-light{
     background: rgba(255, 255, 255, 0);
@@ -195,19 +200,15 @@ body.dark #main-heading-home-link{
     0px 0px 7px rgb(167, 0, 53, 0.5),
     0px 0px 11px rgb(167, 0, 53, 0.3);
 }
-/* #main-heading-writing-links{
+#main-heading-writing-links{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-around;
-    font-family: 'handwritten-text', serif;
-    font-size: 28px;
-} */
-#stories-link{
-    background: url('../img/light-masking-tape-1.png');
-    background-clip:content-box;
-
+    font-family: 'playball', sans-serif;
+    font-size: 30px;
+    opacity: 0.8;
 }
 #mobile-menu-link{
     font-family: "amatic", sans-serif;
@@ -303,6 +304,36 @@ body.sepia #main-heading-section{
     0px 0px 7px rgba(24, 53, 87, 0.5),
     0px 0px 11px rgba(24, 53, 87, 0.3);
 } */
+.book-collection--left{
+    margin-right: 200px;
+}
+.book-collection--right{
+    margin-left: 200px;
+}
+@media screen and (max-width: 800px){
+    .book-collection--left{
+        margin-right: 100px;
+    }
+    .book-collection--right{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 700px){
+    .book-collection--left{
+        margin-right: 50px;
+    }
+    .book-collection--right{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 640px){
+    .book-collection--left{
+        margin-right: 0px;
+    }
+    .book-collection--right{
+        margin-left: 0px;
+    }
+}
 .book-collection-section h1{
     font-family: 'rocksalt', serif;
     font-size: 32px;
@@ -381,7 +412,7 @@ body.dark .book-shelf-section .shelf{
     box-shadow: #000000 0px 2px 5px, #000000 0px 4px 10px;
 }
 .book-flyer-section, .book-sticker-section{
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     height: fit-content;
     width: fit-content;
     position: relative;
