@@ -45,8 +45,23 @@ body.myspace header a, body.myspace header span{
 }
 #myspace-main{
     display: grid;
+    grid-template-areas: 
+    "basicInfo jozieJewelzWrites jozieJewelzWrites"
+    "myspaceSection0 myspaceSection1 myspaceSection1"
+    "myspaceSection0 myspaceSection1 myspaceSection1"
+    "myspaceSection0 myspaceSection1 myspaceSection1";
     max-width: 1000px;
     margin: 80px auto;
+}
+#mspace-section-0{
+    grid-area: myspaceSection0;
+}
+#myspace-section-1{
+    grid-area: myspaceSection1;
+}
+#glitter-jozie-jewelz-writes{
+    grid-area: jozieJewelzWrites;
+    margin: auto;
 }
 #basic-info{
     background: rgb(56, 10, 48);
@@ -56,6 +71,7 @@ body.myspace header a, body.myspace header span{
     padding: 10px;
     margin: 0px;
     width: fit-content;
+    grid-area: basicInfo;
 }
 #basic-info h1{
     margin: 0px;
@@ -115,6 +131,9 @@ body.myspace header a, body.myspace header span{
 }
 #newsletter-section div.mastfoot{
     display: none !important;
+}
+#myspace-main .glitter-text{
+    width: fit-content;
 }
 #top-friends{
     background: rgb(56, 10, 48);
