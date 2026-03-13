@@ -67,6 +67,65 @@ body.myspace header a, body.myspace header span{
 #basic-info p{
     margin: 5px 0px;
     text-align: right;
+    font-family: 'handwritten-text', serif;
 }
-
-/* #cc2b79 rgb(144, 1, 118) rgb(92, 8, 76) */
+#myspace-main iframe{
+    width: 230px;
+    height: 200px;
+    border: solid #cc2b89 10px;
+    box-shadow: 0px 0px 10px black;
+    margin: 20px 0px;
+}
+#myspace-main #contact-info{
+    background: rgb(56, 10, 48);
+    border: solid #b3318c 5px;
+    color: rgb(255, 198, 185);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 10px 0px;
+    width: fit-content;
+}
+#contact-info h2, #contact-info p{
+    margin: 10px;
+}
+#contact-info .glitter-graphic{
+    margin: 0px auto 10px auto;
+    width: fit-content;
+    display: block;
+}
+#newsletter-section{
+    border: double #b3318c 15px;
+    background: rgb(56, 10, 48);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 10px 0px;
+    width: fit-content;
+}
+#newsletter-section div.inline-container{
+    background: rgb(56, 10, 48) !important;
+    border: none !important;
+}
+#newsletter-section div.inline-container h1, #newsletter-section div.inline-container div{
+    color: rgb(255, 198, 185) !important;
+    font-weight: 500;
+}
+#newsletter-section input[type="submit"]{
+    background: #cc2b89 !important;
+    font-family: 'handwritten-text', serif;
+}
+#newsletter-section div.mastfoot{
+    display: none !important;
+}
+#top-friends{
+    background: rgb(56, 10, 48);
+    border: solid #b3318c 5px;
+    color: rgb(255, 198, 185);
+    box-shadow: 0px 0px 10px black;
+    width: 550px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+#top-friends h2{
+    text-align: right;
+    margin: 0px 10px;
+}
