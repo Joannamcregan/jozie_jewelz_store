@@ -10,9 +10,9 @@ $age_years = $diff->y;
     <div id="basic-info">
         <h1>Jozie Jewelz</h1>
         <img src="<?php echo get_theme_file_uri('/img/myspace_2026.jpg'); ?>" alt="a kind-of young white woman with wavy reddish brown hair and glasses smiles while looking up at the camera" />
-        <p>pronouns: she/her</p>
-        <p><?php echo 'age: ' . $age_years; ?></p>
-        <p>location: Northeast Ohio</p>
+        <p>pronouns: <span class="handwritten-text">she/her</span></p>
+        <p>age: <span class="handwritten-text"><?php echo $age_years; ?></span></p>
+        <p>location: <span class="handwritten-text">Northeast Ohio</span></p>
     </div>
     <div id="myspace-section-0">
         <div aria-label="YouTube Video" role="region">
@@ -32,7 +32,20 @@ $age_years = $diff->y;
     <a href="https://www.glitterfy.com/" target="_blank" class="glitter-text" id="glitter-jozie-jewelz-writes"><img src="https://img88.glitterfy.com/26072/glitterfy6070904T3971.gif" alt="glittery blue text spells out Jozie Jewelz Writes" border=0 /></a><br />
     <div id="myspace-section-1">
         <div id="top-friends">
-            <h2>Jozie's Top 16</h2>
+            <h2>Jozie's Top 8</h2>
+            <div id="top-friends-containter">
+                <img src="<?php echo get_theme_file_uri('/img/homegoing_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/firekeepers_daughter_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/white_oleander_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/black_iris_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/layla_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/wrong_family_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/the_girls_in_queens_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/too_soon_top.jpg'); ?>" />
+            </div>
+        </div>
+        <div id="about-me">
+            <p></p>
         </div>
     </div>
 </main>
