@@ -58,6 +58,10 @@ body.myspace header a, body.myspace header span{
 }
 #myspace-section-1{
     grid-area: myspaceSection1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-content:start;
 }
 #glitter-jozie-jewelz-writes{
     grid-area: jozieJewelzWrites;
@@ -140,6 +144,7 @@ body.myspace header a, body.myspace header span{
     color: rgb(255, 198, 185);
     box-shadow: 0px 0px 10px black;
     width: 550px;
+    height: fit-content;
     padding: 10px;
     margin: 10px 0px;
 }
@@ -158,4 +163,14 @@ body.myspace header a, body.myspace header span{
 #top-friends img{
     width: 125px;
     height: auto;
+}
+#about-me{
+    max-width: 500px;
+    height: fit-content;
+    border: solid #cc2b89 10px;
+    box-shadow: 0px 0px 10px black;
+    margin: 20px 0px;
+    background: rgb(56, 10, 48);
+    color: rgb(255, 198, 185);
+    padding: 10px;
 }

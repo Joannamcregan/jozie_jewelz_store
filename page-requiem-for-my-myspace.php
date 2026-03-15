@@ -32,18 +32,19 @@ $age_years = $diff->y;
         <div id="top-friends">
             <h2>Jozie's Top 8</h2>
             <div id="top-friends-containter">
-                <img src="<?php echo get_theme_file_uri('/img/homegoing_top.jpg'); ?>" />
-                <img src="<?php echo get_theme_file_uri('/img/firekeepers_daughter_top.jpg'); ?>" />
-                <img src="<?php echo get_theme_file_uri('/img/white_oleander_top.jpg'); ?>" />
-                <img src="<?php echo get_theme_file_uri('/img/black_iris_top.jpg'); ?>" />
-                <img src="<?php echo get_theme_file_uri('/img/layla_top.jpg'); ?>" />
-                <img src="<?php echo get_theme_file_uri('/img/wrong_family_top.jpg'); ?>" />
-                <img src="<?php echo get_theme_file_uri('/img/the_girls_in_queens_top.jpg'); ?>" />
-                <img src="<?php echo get_theme_file_uri('/img/too_soon_top.jpg'); ?>" />
+                <img src="<?php echo get_theme_file_uri('/img/homegoing_top.jpg'); ?>" alt="in the cover for Homegoing by Yaa Gyasi, drawings of two young West African women's faces are centered on an orange background surrounded by drawings of ocean waves." />
+                <img src="<?php echo get_theme_file_uri('/img/firekeepers_daughter_top.jpg'); ?>" alt="in the cover for FireKeepers Daughter by Angeline Boulley, drawings of two Anishinaabe girls merge with drawings of butterlfly wings, feathers, fire, and the sun." />
+                <img src="<?php echo get_theme_file_uri('/img/white_oleander_top.jpg'); ?>" src="in the cover for White Oleander by Janet Fitch, hand-scrawled text appears over a photo of an Oleander flower." />
+                <img src="<?php echo get_theme_file_uri('/img/black_iris_top.jpg'); ?>" src="in the cover for Black Iris by Leah Raeder, purple text appears around an image of a black and purple flower." />
+                <img src="<?php echo get_theme_file_uri('/img/layla_top.jpg'); ?>" src="in the cover for Layla by Colleen Hoover, a window shows a shadowy figure standing in a living room." />
+                <img src="<?php echo get_theme_file_uri('/img/wrong_family_top.jpg'); ?>" src="in the cover for The Wrong Family by Tarryn Fisher, a white picket fence stands in front of a teal green yard and sky."/>
+                <img src="<?php echo get_theme_file_uri('/img/the_girls_in_queens_top.jpg'); ?>" src="the cover for The Girls in Queens by Christine Kandic Torres combines cut-outs in the shape of a woman's face, Queens New York, and railroad tracks." />
+                <img src="<?php echo get_theme_file_uri('/img/too_soon_top.jpg'); ?>" src="in the cover for Too Soon by Betty Shameh, red text and a golden crown are laid over a green drawing of a young Palestinian woman with long hair, wearing a tanktop." />
             </div>
         </div>
         <div id="about-me">
-            <p></p>
+            <p>I'm a mom, a web dev, a customer service rep, a reader, and a socialist. In the past, I've been a dancer, a maladaptive daydreamer, and a pick-me with some pretty awful taste in men. I'm looking forward to finding out how all these things will influence the work I create in the future.</p>
         </div>
     </div>
 </main>
+<?php get_footer();
