@@ -15,9 +15,7 @@ $age_years = $diff->y;
         <p>location: <span class="handwritten-text">Northeast Ohio</span></p>
     </div>
     <div id="myspace-section-0">
-        <div aria-label="YouTube Video" role="region">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/D1nh3bGrgHM?si=fS-lTLULtDtf3UtR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen role="region"></iframe>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D1nh3bGrgHM?si=fS-lTLULtDtf3UtR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen role="application" aria-label="YouTube Video"></iframe>
         <div id="contact-info">
             <h2>Contact</h2>
             <p>TikTok: @authorjoziejewelz</p>
