@@ -195,14 +195,26 @@ body.myspace header a, body.myspace header span{
     }
 }
 @media screen and (max-width: 870px) {
+    #myspace-section-1{
+        justify-content: center;
+    }
     #top-friends{
         width: 220px;
+        height: 480px;
     }
     #top-friends img{
-        width: 100px;
+        padding-top: 10px;
     }
     #about-me{
         width: 260px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #glitter-jozie-jewelz-writes img{
+        width: 250px;
+    }
+    #about-me{
+        width: 200px;
     }
 }
 body.myspace footer{
