@@ -44,7 +44,8 @@ $age_years = $diff->y;
         </div>
         <div id="about-me">
             <h2>About Me</h2>
-            <p>I'm a mom, a web dev, a customer service rep, a reader, and a socialist. In the past, I've been a dancer, a maladaptive daydreamer, and a pick-me with some pretty awful taste in men. I'm looking forward to finding out how all these things will influence the work I create in the future.</p>
+            <p>I'm a mom, a web dev, a customer service rep, a reader, and a socialist. In the past, I've been a dancer, a maladaptive daydreamer, and kind of a pick-me with some pretty awful taste in men. I'm looking forward to finding out how all these things will influence the work I create in the future.</p>
+            <a href="https://www.glitter-graphics.com" target="_blank"><img src="http://dl3.glitter-graphics.net/pub/1541/1541613i15ydwm8jb.gif" width=80 height=83 border=0></a>
         </div>
     </div>
 </main>

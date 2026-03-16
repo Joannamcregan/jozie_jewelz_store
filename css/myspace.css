@@ -178,6 +178,33 @@ body.myspace header a, body.myspace header span{
 #about-me h2{
     margin: 0px;
 }
+#about-me a{
+    width: fit-content;
+    display: block;
+    margin: 10px auto;
+}
+@media screen and (max-width: 950px) {
+    #top-friends{
+        width: 450px;
+    }
+    #top-friends img{
+        width: 100px;
+    }
+    #about-me{
+        width: 420px;
+    }
+}
+@media screen and (max-width: 870px) {
+    #top-friends{
+        width: 220px;
+    }
+    #top-friends img{
+        width: 100px;
+    }
+    #about-me{
+        width: 260px;
+    }
+}
 body.myspace footer{
     background: rgb(56, 10, 48);
     border-left: double #b3318c 15px;
