@@ -52,6 +52,7 @@ body.myspace header a, body.myspace header span{
     "myspaceSection0 myspaceSection1 myspaceSection1";
     max-width: 1000px;
     margin: 80px auto;
+    padding-bottom: 200px;
 }
 #mspace-section-0{
     grid-area: myspaceSection0;
@@ -172,5 +173,44 @@ body.myspace header a, body.myspace header span{
     margin: 20px 0px;
     background: rgb(56, 10, 48);
     color: rgb(255, 198, 185);
-    padding: 10px;
+    padding: 20px 20px 10px 20px;
+}
+#about-me h2{
+    margin: 0px;
+}
+body.myspace footer{
+    background: rgb(56, 10, 48);
+    border-left: double #b3318c 15px;
+    border-top: double #b3318c 15px;
+    border-right: double #b3318c 15px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 20px 0px;
+    margin: 0px;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    color: rgb(255, 198, 185);
+    display: block;
+}
+#myspace-policy-section{
+    font-family: 'amatic', serif;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+#myspace-policy-section #privacy-policy-link{
+    padding: 0px;
+}
+#myspace-copyright-section{
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    font-family: 'amatic', serif;
+    font-size: 22px;
+    text-align: center;
 }

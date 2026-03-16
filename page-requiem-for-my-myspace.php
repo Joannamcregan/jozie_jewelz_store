@@ -30,7 +30,7 @@ $age_years = $diff->y;
     <a href="https://www.glitterfy.com/" target="_blank" class="glitter-text" id="glitter-jozie-jewelz-writes"><img src="https://img88.glitterfy.com/26072/glitterfy6070904T3971.gif" alt="glittery blue text spells out Jozie Jewelz Writes" border=0 /></a><br />
     <div id="myspace-section-1">
         <div id="top-friends">
-            <h2>Jozie's Top 8</h2>
+            <h2>Top 8 Favorites</h2>
             <div id="top-friends-containter">
                 <img src="<?php echo get_theme_file_uri('/img/homegoing_top.jpg'); ?>" alt="in the cover for Homegoing by Yaa Gyasi, drawings of two young West African women's faces are centered on an orange background surrounded by drawings of ocean waves." />
                 <img src="<?php echo get_theme_file_uri('/img/firekeepers_daughter_top.jpg'); ?>" alt="in the cover for FireKeepers Daughter by Angeline Boulley, drawings of two Anishinaabe girls merge with drawings of butterlfly wings, feathers, fire, and the sun." />
@@ -43,8 +43,9 @@ $age_years = $diff->y;
             </div>
         </div>
         <div id="about-me">
+            <h2>About Me</h2>
             <p>I'm a mom, a web dev, a customer service rep, a reader, and a socialist. In the past, I've been a dancer, a maladaptive daydreamer, and a pick-me with some pretty awful taste in men. I'm looking forward to finding out how all these things will influence the work I create in the future.</p>
         </div>
     </div>
 </main>
-<?php get_footer();
+<?php get_footer('myspace');
