@@ -217,6 +217,61 @@ body.myspace header a, body.myspace header span{
         width: 200px;
     }
 }
+@media screen and (max-width: 700px) {
+    #myspace-main{
+        display: grid;
+        grid-template-areas: 
+        "basicInfo"
+        "jozieJewelzWrites"
+        "myspaceSection0"
+        "myspaceSection1";
+        max-width: 1000px;
+        margin: 80px auto;
+        padding-bottom: 200px;
+    }
+    #basic-info{
+        margin: 40px auto;
+    }
+    #glitter-jozie-jewelz-writes{
+        margin: 20px 20px 20px 100px;
+    }
+    #myspace-main iframe{
+        display: block;
+        margin: 20px auto;
+    }
+    #myspace-main #contact-info{
+        display: block;
+        margin: 30px 20px 20px 280px;
+    }
+    #top-friends{
+        width: 450px;
+        height: fit-content;
+    }
+    #about-me{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #myspace-main #contact-info{
+        margin: 30px 20px 20px 200px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #myspace-main #contact-info{
+        margin: 30px 20px 20px 100px;
+    }
+    #top-friends{
+        width: 270px;
+        height: 580px;
+    }
+    #top-friends img{
+        padding-top: 10px;
+        width: 125px;
+    }
+    #about-me{
+        width: 90%;
+    }
+}
 body.myspace footer{
     background: rgb(56, 10, 48);
     border-left: double #b3318c 15px;
