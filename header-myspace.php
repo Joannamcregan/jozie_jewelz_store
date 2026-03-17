@@ -10,7 +10,8 @@
 </head>
 <body class="myspace">
 <header>
-    <nav>
+    <span class="site-header__menu-trigger myspace-mobile" tabindex="-1" id="mobile-menu-link">menu</span>
+    <nav class="myspace-desktop">
         <a>stories</a>
         <a>novels</a>
         <a>e-zines</a>
