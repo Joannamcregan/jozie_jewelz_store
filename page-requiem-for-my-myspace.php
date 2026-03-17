@@ -21,7 +21,7 @@ $age_years = $diff->y;
             <p>TikTok: @authorjoziejewelz</p>
             <p>UpScroll: @joziejewelz</p>
             <p>Instagram: @joziejewelz</p>
-            <a href="https://www.glitter-graphics.com" target="_blank" class="glitter-graphic"><img src="http://dl9.glitter-graphics.net/pub/687/687779doa3stdf14.gif" width=101 height=90 border=0></a>
+            <a href="https://www.glitter-graphics.com" target="_blank" class="glitter-graphic"><img src="http://dl9.glitter-graphics.net/pub/687/687779doa3stdf14.gif" alt="a sparkly illustration of a red kiss mark" width=101 height=90 border=0></a>
         </div>
     </div>
     <div id="newsletter-section">
@@ -34,18 +34,18 @@ $age_years = $diff->y;
             <div id="top-friends-containter">
                 <img src="<?php echo get_theme_file_uri('/img/homegoing_top.jpg'); ?>" alt="in the cover for Homegoing by Yaa Gyasi, drawings of two young West African women's faces are centered on an orange background surrounded by drawings of ocean waves." />
                 <img src="<?php echo get_theme_file_uri('/img/firekeepers_daughter_top.jpg'); ?>" alt="in the cover for FireKeepers Daughter by Angeline Boulley, drawings of two Anishinaabe girls merge with drawings of butterlfly wings, feathers, fire, and the sun." />
-                <img src="<?php echo get_theme_file_uri('/img/white_oleander_top.jpg'); ?>" src="in the cover for White Oleander by Janet Fitch, hand-scrawled text appears over a photo of an Oleander flower." />
-                <img src="<?php echo get_theme_file_uri('/img/black_iris_top.jpg'); ?>" src="in the cover for Black Iris by Leah Raeder, purple text appears around an image of a black and purple flower." />
-                <img src="<?php echo get_theme_file_uri('/img/layla_top.jpg'); ?>" src="in the cover for Layla by Colleen Hoover, a window shows a shadowy figure standing in a living room." />
-                <img src="<?php echo get_theme_file_uri('/img/wrong_family_top.jpg'); ?>" src="in the cover for The Wrong Family by Tarryn Fisher, a white picket fence stands in front of a teal green yard and sky."/>
-                <img src="<?php echo get_theme_file_uri('/img/the_girls_in_queens_top.jpg'); ?>" src="the cover for The Girls in Queens by Christine Kandic Torres combines cut-outs in the shape of a woman's face, Queens New York, and railroad tracks." />
-                <img src="<?php echo get_theme_file_uri('/img/too_soon_top.jpg'); ?>" src="in the cover for Too Soon by Betty Shameh, red text and a golden crown are laid over a green drawing of a young Palestinian woman with long hair, wearing a tanktop." />
+                <img src="<?php echo get_theme_file_uri('/img/white_oleander_top.jpg'); ?>" alt="in the cover for White Oleander by Janet Fitch, hand-scrawled text appears over a photo of an Oleander flower." />
+                <img src="<?php echo get_theme_file_uri('/img/black_iris_top.jpg'); ?>" alt="in the cover for Black Iris by Leah Raeder, purple text appears around an image of a black and purple flower." />
+                <img src="<?php echo get_theme_file_uri('/img/layla_top.jpg'); ?>" alt="in the cover for Layla by Colleen Hoover, a window shows a shadowy figure standing in a living room." />
+                <img src="<?php echo get_theme_file_uri('/img/wrong_family_top.jpg'); ?>" alt="in the cover for The Wrong Family by Tarryn Fisher, a white picket fence stands in front of a teal green yard and sky."/>
+                <img src="<?php echo get_theme_file_uri('/img/the_girls_in_queens_top.jpg'); ?>" alt="the cover for The Girls in Queens by Christine Kandic Torres combines cut-outs in the shape of a woman's face, Queens New York, and railroad tracks." />
+                <img src="<?php echo get_theme_file_uri('/img/too_soon_top.jpg'); ?>" alt="in the cover for Too Soon by Betty Shameh, red text and a golden crown are laid over a green drawing of a young Palestinian woman with long hair, wearing a tanktop." />
             </div>
         </div>
         <div id="about-me">
             <h2>About Me</h2>
-            <p>I'm a mom, a web dev, a customer service rep, a reader, and a socialist. In the past, I've been a dancer, a maladaptive daydreamer, and kind of a pick-me with some pretty awful taste in men. I'm looking forward to finding out how all these things will influence the work I create in the future.</p>
-            <a href="https://www.glitter-graphics.com" target="_blank"><img src="http://dl3.glitter-graphics.net/pub/1541/1541613i15ydwm8jb.gif" width=80 height=83 border=0></a>
+            <p>I'm a mom, a writer, a web dev, a customer service rep, a reader, and a socialist. In the past, I've been a dancer, a maladaptive daydreamer, and kind of a pick-me with some pretty awful taste in men. I'm looking forward to finding out how all these things will influence the work I create in the future.</p>
+            <a href="https://www.glitter-graphics.com" target="_blank"><img src="http://dl3.glitter-graphics.net/pub/1541/1541613i15ydwm8jb.gif" alt="a sparkly black heart drawing" width=80 height=83 border=0></a>
         </div>
     </div>
 </main>
