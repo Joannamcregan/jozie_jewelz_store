@@ -16,6 +16,21 @@ body.myspace{
   position: relative;
   border: solid rgba(255, 255, 255, 0) 1px;
 }
+.myspace-mobile{
+    display: none;
+}
+@media screen and (max-width: 400px) {
+    .myspace-mobile{
+        display: block !important;
+    }
+    .myspace-desktop{
+        display: none !important;
+    }
+    body.myspace #mobile-menu-link{
+        transform: rotate(0deg) !important;
+        padding-top: 20px;
+    }
+}
 body.myspace header{
     background: rgb(56, 10, 48);
     border-left: double #b3318c 15px;
@@ -270,6 +285,27 @@ body.myspace header a, body.myspace header span{
     }
     #about-me{
         width: 90%;
+    }
+}
+@media screen and (max-width: 400px){
+    #glitter-jozie-jewelz-writes{
+        margin: 20px auto;
+    }
+    #myspace-main #contact-info{
+        margin: 30px auto 20px auto;
+    }
+    #newsletter-section .eo-form-wrapper{
+        min-width: 200px !important;
+    }
+}
+@media screen and (max-width: 400px){
+    #top-friends{
+        width: 220px;
+        height: 480px;
+    }
+    #top-friends img{
+        padding-top: 10px;
+        width: 100px;
     }
 }
 body.myspace footer{
