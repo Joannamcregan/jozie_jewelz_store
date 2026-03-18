@@ -208,6 +208,16 @@ body.dark #main-heading-home-link{
     font-family: 'playball', sans-serif;
     font-size: 30px;
     opacity: 0.8;
+    cursor: pointer;
+}
+body.light #stories-link{
+    color: rgb(19, 18, 78);
+}
+body.sepia #stories-link{
+    color: rgb(46, 69, 81);
+}
+body.dark #stories-link{
+    color: rgb(222, 203, 255);
 }
 #mobile-menu-link{
     font-family: "amatic", sans-serif;
