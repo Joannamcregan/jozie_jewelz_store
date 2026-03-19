@@ -1,6 +1,6 @@
 <?php get_header();
 ?><main>
-    <div class="blog-content">
+    <div class="single-content">
         <?php wp_reset_postdata();
         ?><h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
