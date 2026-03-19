@@ -73,6 +73,27 @@ div.blog-comments div.comment-author img{
 }
 div.blog-comments ol.commentlist{
     list-style: none;
+    padding-inline-start: 20px;
+}
+@media screen and (max-width: 500px){
+    div.blog-comments ol.commentlist{
+        padding-inline-start: 15px;
+    }
+}
+@media screen and (max-width: 450px){
+    div.blog-comments ol.commentlist{
+        padding-inline-start: 10px;
+    }
+}
+@media screen and (max-width: 400px){
+    div.blog-comments ol.commentlist{
+        padding-inline-start: 5px;
+    }
+}
+@media screen and (max-width: 350px){
+    div.blog-comments ol.commentlist{
+        padding-inline-start: 0px;
+    }
 }
 div.blog-comments h3#reply-title{
     font-family: 'handwritten-text', sans-serif;
@@ -118,9 +139,15 @@ body.light div.blog-comments{
     3px 7px 10px rgba(92, 92, 92, 0.8),
     -3px -2px 10px rgba(92, 92, 92, 0.8);
 }
+@media screen and (max-width: 600px){
+    body.light div.blog-comments{
+        border: solid rgb(240, 240, 240) 10px;
+    }
+}
 body.light div.blog-comments p.logged-in-as{
     color: rgb(96, 17, 96);
     transform: rotate(-6deg);
+    margin-top: -15px;
 }
 body.light div.blog-comments h3#reply-title{
     color: rgb(96, 17, 96);
@@ -152,6 +179,11 @@ body.sepia div.blog-comments{
     -0.3px -0.7px 1px rgba(92, 92, 92, 0.5) inset,
     3px 7px 10px rgba(92, 92, 92, 0.8),
     -3px -2px 10px rgba(92, 92, 92, 0.8);
+}
+@media screen and (max-width: 600px){
+    body.sepia div.blog-comments{
+        border: solid #a07f5c 10px;
+    }
 }
 body.sepia div.blog-comments h2{
     background: #e5d2d8;
@@ -364,4 +396,28 @@ body.sepia p.form-submit:before{
     position: absolute;
     top: 5px;
     right: 10px;
+}
+body.dark div.blog-comments{
+    border-radius: 5px;
+    padding: 20px;
+    background: #151616;
+    border: solid #a07f5c 15px;
+    box-shadow: 0.3px 2px 1px rgba(7, 7, 7, 0.5) inset,
+    -0.3px -0.7px 1px rgba(7, 7, 7, 0.5) inset,
+    3px 7px 10px rgba(7, 7, 7, 0.8),
+    -3px -2px 10px rgba(7, 7, 7, 0.8);
+}
+@media screen and (max-width: 600px){
+    body.dark div.blog-comments{
+        border: solid #a07f5c 10px;
+    }
+}
+body.dark div.blog-comments h3#reply-title{
+    color: rgb(253, 210, 253);
+    transform: rotate(-6deg);
+}
+body.dark div.blog-comments p.logged-in-as{
+    color: rgb(253, 210, 253);
+    transform: rotate(-6deg);
+    margin-top: -15px;
 }
