@@ -16,3 +16,25 @@ function site_files(){
 add_action('wp_enqueue_scripts','site_files');
 /* Disable WordPress Admin Bar for all users */
 add_filter( 'show_admin_bar', '__return_false' );
+
+function story_custom_post_types() {
+    register_post_type('story', array(
+        'supports' => array('title', 'editor', 'excerpt'),
+        'has_archive' => false,
+        'rewrite' => array(
+            'slug' => 'stories'
+        ),
+        'public' => true,
+        'menu_position' => 3,
+        'labels' => array(
+            'name' => 'Story',
+            'add_new' => 'Add New Story',
+            'edit_item' => 'Edit Stories',
+            'all_items' => 'All Stories',
+            'singular_item' > 'Story'
+        ),
+        'menu_icon' => 'dashicons-text-page'
+    ));
+}
+
+add_action('init', 'story_custom_post_types');
