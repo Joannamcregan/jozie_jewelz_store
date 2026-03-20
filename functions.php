@@ -16,7 +16,7 @@ function site_files(){
 add_action('wp_enqueue_scripts','site_files');
 /* Disable WordPress Admin Bar for all users */
 add_filter( 'show_admin_bar', '__return_false' );
-
+// custom post types
 function story_custom_post_types() {
     register_post_type('story', array(
         'supports' => array('title', 'editor', 'excerpt'),
@@ -27,7 +27,7 @@ function story_custom_post_types() {
         'public' => true,
         'menu_position' => 3,
         'labels' => array(
-            'name' => 'Story',
+            'name' => 'Stories',
             'add_new' => 'Add New Story',
             'edit_item' => 'Edit Stories',
             'all_items' => 'All Stories',
@@ -36,5 +36,11 @@ function story_custom_post_types() {
         'menu_icon' => 'dashicons-text-page'
     ));
 }
-
 add_action('init', 'story_custom_post_types');
+//file types------------------------------------------------------------------------------
+function tomc_mime_types($mime_types){
+    $mime_types['epub'] = 'application/epub+zip'; 
+    unset($mime_types['png']); 
+    return $mime_types;
+}
+add_filter('upload_mimes', 'tomc_mime_types', 1, 1);
