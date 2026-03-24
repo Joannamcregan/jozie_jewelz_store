@@ -8,6 +8,7 @@ function site_files(){
     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css', false, '', 'all');
     wp_enqueue_style('singles', get_stylesheet_directory_uri() . '/css/singles.css', false, '', 'all');
     wp_enqueue_style('myspace', get_stylesheet_directory_uri() . '/css/myspace.css', false, '', 'all');
+    wp_enqueue_style('product', get_stylesheet_directory_uri() . '/css/product.css', false, '', 'all');
     wp_localize_script('custom-js', 'customData', array(
         'root_url' => get_site_url(),        
         'nonce' => wp_create_nonce('wp_rest')
@@ -44,3 +45,16 @@ function tomc_mime_types($mime_types){
     return $mime_types;
 }
 add_filter('upload_mimes', 'tomc_mime_types', 1, 1);
+// woocommerce support
+add_action( 'after_setup_theme', 'jozie_enable_woocommerce_support' );
+function jozie_enable_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+function jozie_marketplace_remove_product_tabs( $tabs ) {
+    unset($tabs['additional_information']); 
+    unset($tabs['description']);
+    unset($tabs['reviews']);
+    return $tabs;
+}
+add_filter( 'woocommerce_product_tabs', 'jozie_marketplace_remove_product_tabs', 98 );

@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header(); ?>
-<main>
+<main class="single-product">
     <?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
@@ -35,20 +35,25 @@ get_header(); ?>
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
         $amazon_link = get_post_meta($post->ID, 'amazon_link', true);
-        $barnes_and_noble_link = '';
-        $kobo_link = '';
-        $bookshop_link = '';
-        if ($amazon_link != ''){
-            ?><p>Rather buy it on Amazon? You can do so <a target="_blank" href="<?php echo $amazon_link; ?>">here</a>.</p>
-        <?php }
-        if (get_post_meta($post->ID, 'barnes_and_noble_link', true) != ''){
-            ?><p>If you'd prefer to buy it from Barnes & Noble, you can do so <a target="_blank" href="<?php echo get_post_meta($post->ID, 'barnes_and_noble_link', true); ?>">here</a>.</p>
-        <?php }
-        if (get_post_meta($post->ID, 'kobo_link', true) != ''){
-            ?><p>If you'd like to buy it from Kobo, you can do so <a target="_blank" href="<?php echo get_post_meta($post->ID, 'kobo_link', true); ?>">here</a>.
-        <?php }
-        if (get_post_meta($post->ID, 'bookshop_link', true) != ''){
-            ?><p>If you'd like to buy it from Bookshop.org, you can do so <a target="_blank" href="<?php echo get_post_meta($post->ID, 'bookshop_link', true); ?>">here</a>.
+        $barnes_and_noble_link = get_post_meta($post->ID, 'barnes_and_noble_link', true);
+        $kobo_link = get_post_meta($post->ID, 'kobo_link', true);
+        $bookshop_link = get_post_meta($post->ID, 'bookshop_link', true);
+        if ($amazon_link != '' || $barnes_and_noble_link != '' || $barnes_and_noble_link != '' || $kobo_link != ''){
+            ?><div id="other-retailers-section">
+                <p>Also available from the following retailers:</p>
+                <?php if ($bookshop_link != ''){
+                    ?><p><a target="_blank" href="<?php echo $bookshop_link; ?>">Bookshop.org</a></p>
+                <?php }
+                if ($amazon_link != ''){
+                    ?><p><a target="_blank" href="<?php echo $amazon_link; ?>">Amazon</a></p>
+                <?php }
+                if ($barnes_and_noble_link != ''){
+                    ?><p><a target="_blank" href="<?php echo $barnes_and_noble_link ?>">Barnes & Noble</a></p>
+                <?php }
+                if ($kobo_link != ''){
+                    ?><p><a target="_blank" href="<?php echo $kobo_link; ?>">Kobo</a></p>
+                <?php }
+            ?></div>
         <?php }
         echo wpautop(the_content());
         woocommerce_get_template( 'single-product-reviews.php' );
