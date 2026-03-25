@@ -122,6 +122,24 @@ div.blog-comments textarea#comment{
     width: 600px;
     max-width: 98%;
 }
+div.blog-comments p.comment-form-author input[type="text"]{
+    padding: 10px 10px 15px 10px;
+    display: block;
+    border-radius: 10px 15px 18px 17px;
+    width: 600px;
+    max-width: 98%;
+}
+div.blog-comments p.comment-form-email input[type="email"]{
+    padding: 10px 10px 15px 10px;
+    display: block;
+    border-radius: 15px 13px 19px 23px;
+    width: 600px;
+    max-width: 98%;
+}
+div.blog-comments input#wp-comment-cookies-consent{
+    width: 20px;
+    height: 20px;
+}
 div.blog-comments input[type="submit"]{
     background: transparent;
     border-radius: 5px 7px 8px 9px;
@@ -162,6 +180,28 @@ body.light div.blog-comments textarea#comment{
     border-right: solid rgb(22, 22, 22) 6px;
     border-bottom: solid rgb(22, 22, 22) 4px;
     border-left: solid rgb(22, 22, 22) 3px;
+}
+body.light div.blog-comments p.comment-form-author input[type="text"]{
+    border-top: solid rgb(22, 22, 22) 6px;
+    border-right: solid rgb(22, 22, 22) 6px;
+    border-bottom: solid rgb(22, 22, 22) 4px;
+    border-left: solid rgb(22, 22, 22) 5px;
+    background-color: transparent;
+}
+body.light div.blog-comments p.comment-form-email input[type="email"]{
+    border-top: solid rgb(22, 22, 22) 7px;
+    border-right: solid rgb(22, 22, 22) 8px;
+    border-bottom: solid rgb(22, 22, 22) 5px;
+    border-left: solid rgb(22, 22, 22) 3px;
+    background-color: transparent;
+}
+body.light div.blog-comments input#wp-comment-cookies-consent{
+    border-top: solid rgb(22, 22, 22) 4px;
+    border-right: solid rgb(22, 22, 22) 3px;
+    border-bottom: solid rgb(22, 22, 22) 3px;
+    border-left: solid rgb(22, 22, 22) 2px;
+    background-color: transparent;
+    appearance: unset;
 }
 body.light div.blog-comments input[type="submit"]{
     border-top: solid rgb(22, 22, 22) 3px;
@@ -323,6 +363,28 @@ body.sepia div.blog-comments textarea#comment{
     border-left: solid #4f3b26 3px;
     background: #e5d2d8;
     color: #4f3b26;
+}
+body.sepia div.blog-comments p.comment-form-author input[type="text"]{
+    border-top: solid #4f3b26 6px;
+    border-right: solid #4f3b26 6px;
+    border-bottom: solid #4f3b26 4px;
+    border-left: solid #4f3b26 5px;
+    background-color: transparent;
+}
+body.sepia div.blog-comments p.comment-form-email input[type="email"]{
+    border-top: solid #4f3b26 7px;
+    border-right: solid #4f3b26 8px;
+    border-bottom: solid #4f3b26 5px;
+    border-left: solid #4f3b26 3px;
+    background-color: transparent;
+}
+body.sepia div.blog-comments input#wp-comment-cookies-consent{
+    border-top: solid #4f3b26 4px;
+    border-right: solid #4f3b26 3px;
+    border-bottom: solid #4f3b26 3px;
+    border-left: solid #4f3b26 2px;
+    background-color: transparent;
+    appearance: unset;
 }
 body.sepia div.blog-comments input[type="submit"]{
     border-top: solid #4f3b26 3px;
@@ -588,6 +650,28 @@ body.dark div.blog-comments textarea#comment{
     border-left: solid rgb(221, 221, 221) 3px;
     background: #151616;
     color: rgb(221, 221, 221);
+}
+body.dark div.blog-comments p.comment-form-author input[type="text"]{
+    border-top: solid rgb(221, 221, 221) 6px;
+    border-right: solid rgb(221, 221, 221) 6px;
+    border-bottom: solid rgb(221, 221, 221) 4px;
+    border-left: solid rgb(221, 221, 221) 5px;
+    background-color: transparent;
+}
+body.dark div.blog-comments p.comment-form-email input[type="email"]{
+    border-top: solid rgb(221, 221, 221) 7px;
+    border-right: solid rgb(221, 221, 221) 8px;
+    border-bottom: solid rgb(221, 221, 221) 5px;
+    border-left: solid rgb(221, 221, 221) 3px;
+    background-color: transparent;
+}
+body.dark div.blog-comments input#wp-comment-cookies-consent{
+    border-top: solid rgb(221, 221, 221) 4px;
+    border-right: solid rgb(221, 221, 221) 3px;
+    border-bottom: solid rgb(221, 221, 221) 3px;
+    border-left: solid rgb(221, 221, 221) 2px;
+    background-color: transparent;
+    appearance: unset;
 }
 body.dark div.blog-comments input[type="submit"]{
     border-top: solid rgb(221, 221, 221) 3px;
