@@ -129,6 +129,9 @@ div.blog-comments input[type="submit"]{
     display: block;
     font-family: 'rocksalt', sans-serif;
 }
+form#commentform span#email-notes, form#commentform span#required-field-message{
+    display: block;
+}
 body.light div.blog-comments{
     border-radius: 50px;
     padding: 20px;
@@ -398,6 +401,87 @@ body.sepia p.form-submit:before{
     position: absolute;
     top: 5px;
     right: 10px;
+}
+body.sepia p.woocommerce-noreviews{
+    background: #e1eee5;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+    box-shadow: 
+    0.5px -1px 2px rgba(79, 79, 79, 0.7),
+    -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
+    z-index: 900;
+}
+body.sepia p.woocommerce-noreviews:before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #26199b;
+    border-top: solid rgba(79, 79, 79, 0.7) 1.5px;
+    border-left: solid rgba(79, 79, 79, 0.7) 1px;
+    border-right: solid rgba(79, 79, 79, 0.7) 1px;
+    border-bottom: solid rgba(79, 79, 79, 0.7) 2.5px;
+    box-shadow: 0px 2px 2px rgba(79, 79, 79, 1);
+    position: absolute;
+    top: 2px;
+    right: 50%;
+}
+body.sepia div#review_form span#reply-title{
+    background: #e1eee5;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+    box-shadow: 
+    0.5px -1px 2px rgba(79, 79, 79, 0.7),
+    -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
+    margin-top: -20px;
+    display: block;
+    z-index: 800;
+}
+body.sepia div#review_form span#reply-title:before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #26199b;
+    border-top: solid rgba(79, 79, 79, 0.7) 1.5px;
+    border-left: solid rgba(79, 79, 79, 0.7) 1px;
+    border-right: solid rgba(79, 79, 79, 0.7) 1px;
+    border-bottom: solid rgba(79, 79, 79, 0.7) 2.5px;
+    box-shadow: 0px 2px 2px rgba(79, 79, 79, 1);
+    position: absolute;
+    top: 2px;
+    right: 50%;
+}
+body.sepia div#review_form p.comment-notes{
+    background: #e1eee5;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+    box-shadow: 
+    0.5px -1px 2px rgba(79, 79, 79, 0.7),
+    -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
+    margin-top: 3px;
+    transform: rotate(1deg);
+}
+body.sepia div#review_form p.comment-notes:before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #26199b;
+    border-top: solid rgba(79, 79, 79, 0.7) 1.5px;
+    border-left: solid rgba(79, 79, 79, 0.7) 1px;
+    border-right: solid rgba(79, 79, 79, 0.7) 1px;
+    border-bottom: solid rgba(79, 79, 79, 0.7) 2.5px;
+    box-shadow: 0px 2px 2px rgba(79, 79, 79, 1);
+    position: absolute;
+    top: 2px;
+    right: 45%;
 }
 body.dark div.blog-comments{
     border-radius: 5px;
