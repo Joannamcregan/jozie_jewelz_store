@@ -50,7 +50,6 @@ class FrontPage{
             }, 1000);
         })
         this.selections.on('click', (e)=>{
-            console.log('selection made');
             const selected = u(e.target);
             this.selections.removeClass('selected-glasses');
             setTimeout((e)=>{
