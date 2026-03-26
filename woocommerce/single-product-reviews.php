@@ -126,43 +126,40 @@ if ( ! comments_open() ) {
 					$comment_form['comment_field'] = '<div class="comment-form-rating"><label for="rating" id="comment-form-rating-label">' . esc_html__( 'Your rating', 'woocommerce' ) . ( wc_review_ratings_required() ? '&nbsp;<span class="required">*</span>' : '' ) . '</label>
                     <div id="rating-star-container">
                         <div class="rating-star-box" id="rating-star-box-1">
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_1_light.png') . '" aria-label="unfilled first star" class="unfilled light" />
                             <img src="' . get_theme_file_uri('/img/filled_star_1_light.png') . '" aria-label="filled first star" class="filled light" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_1_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia" />
                             <img src="' . get_theme_file_uri('/img/filled_star_1_sepia.png') . '" aria-label="filled first star" class="filled sepia" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_1_dark.png') . '" aria-label="unfilled first star" class="unfilled dark" />
                             <img src="' . get_theme_file_uri('/img/filled_star_1_dark.png') . '" aria-label="filled first star" class="filled dark" />
                         </div>
                         <div class="rating-star-box" id="rating-star-box-2">
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_2_light.png') . '" aria-label="unfilled first star" class="unfilled light" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_2_light.png') . '" aria-label="unfilled first star" class="unfilled light hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_2_light.png') . '" aria-label="filled first star" class="filled light" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_2_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_2_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_2_sepia.png') . '" aria-label="filled first star" class="filled sepia" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_2_dark.png') . '" aria-label="unfilled first star" class="unfilled dark" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_2_dark.png') . '" aria-label="unfilled first star" class="unfilled dark hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_2_dark.png') . '" aria-label="filled first star" class="filled dark" />
                         </div>
                         <div class="rating-star-box" id="rating-star-box-3">
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_3_light.png') . '" aria-label="unfilled first star" class="unfilled light" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_3_light.png') . '" aria-label="unfilled first star" class="unfilled light hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_3_light.png') . '" aria-label="filled first star" class="filled light" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_3_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_3_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_3_sepia.png') . '" aria-label="filled first star" class="filled sepia" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_3_dark.png') . '" aria-label="unfilled first star" class="unfilled dark" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_3_dark.png') . '" aria-label="unfilled first star" class="unfilled dark hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_3_dark.png') . '" aria-label="filled first star" class="filled dark" />
                         </div>
                         <div class="rating-star-box" id="rating-star-box-4">
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_4_light.png') . '" aria-label="unfilled first star" class="unfilled light" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_4_light.png') . '" aria-label="unfilled first star" class="unfilled light hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_4_light.png') . '" aria-label="filled first star" class="filled light" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_4_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_4_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_4_sepia.png') . '" aria-label="filled first star" class="filled sepia" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_4_dark.png') . '" aria-label="unfilled first star" class="unfilled dark" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_4_dark.png') . '" aria-label="unfilled first star" class="unfilled dark hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_4_dark.png') . '" aria-label="filled first star" class="filled dark" />
                         </div>
                         <div class="rating-star-box" id="rating-star-box-5">
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_5_light.png') . '" aria-label="unfilled first star" class="unfilled light" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_5_light.png') . '" aria-label="unfilled first star" class="unfilled light hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_5_light.png') . '" aria-label="filled first star" class="filled light" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_5_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_5_sepia.png') . '" aria-label="unfilled first star" class="unfilled sepia hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_5_sepia.png') . '" aria-label="filled first star" class="filled sepia" />
-                            <img src="' . get_theme_file_uri('/img/unfilled_star_5_dark.png') . '" aria-label="unfilled first star" class="unfilled dark" />
+                            <img src="' . get_theme_file_uri('/img/unfilled_star_5_dark.png') . '" aria-label="unfilled first star" class="unfilled dark hidden" />
                             <img src="' . get_theme_file_uri('/img/filled_star_5_dark.png') . '" aria-label="filled first star" class="filled dark" />
                         </div>
                     </div>

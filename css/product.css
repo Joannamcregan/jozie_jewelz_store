@@ -44,3 +44,12 @@ body.sepia div.rating-star-box img.dark, body.sepia div.rating-star-box img.ligh
 body.dark div.rating-star-box img.sepia, body.dark div.rating-star-box img.light{
     display: none;
 }
+div#rating-star-container{
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.rating-star-box{
+    width: fit-content;
+}
