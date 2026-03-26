@@ -8,119 +8,8 @@ main.single-product div.type-product img.wp-post-image{
 div#other-retailers-section{
     border: solid red 2px;
 }
-div#review_form p.stars a{
-    display: block;
-}
-@media screen and (max-width: 400px){
-    div#review_form p.stars a{
-        margin-top: 40px;
-    }
-}
-body.light div#review_form a.star-1::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_1_of_5_light.png');
-    width: 170px;
-    height: 40px;
-}
-body.light div#review_form a.star-2::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_2_of_5_light.png');
-    width: 170px;
-    height: 40px;
-}
-body.light div#review_form a.star-3::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_3_of_5_light.png');
-    width: 170px;
-    height: 40px;
-}
-body.light div#review_form a.star-4::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_4_of_5_light.png');
-    width: 170px;
-    height: 40px;
-}
-body.light div#review_form a.star-5::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_5_of_5_light.png');
-    width: 170px;
-    height: 40px;
-}
-body.sepia div#review_form a.star-1::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_1_of_5_sepia.png');
-    width: 170px;
-    height: 40px;
-}
-body.sepia div#review_form a.star-2::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_2_of_5_sepia.png');
-    width: 170px;
-    height: 40px;
-}
-body.sepia div#review_form a.star-3::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_3_of_5_sepia.png');
-    width: 170px;
-    height: 40px;
-}
-body.sepia div#review_form a.star-4::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_4_of_5_sepia.png');
-    width: 170px;
-    height: 40px;
-}
-body.sepia div#review_form a.star-5::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_5_of_5_sepia.png');
-    width: 170px;
-    height: 40px;
-}
-body.dark div#review_form a.star-1::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_1_of_5_dark.png');
-    width: 170px;
-    height: 40px;
-}
-body.dark div#review_form a.star-2::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_2_of_5_dark.png');
-    width: 170px;
-    height: 40px;
-}
-body.dark div#review_form a.star-3::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_3_of_5_dark.png');
-    width: 170px;
-    height: 40px;
-}
-body.dark div#review_form a.star-4::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_4_of_5_dark.png');
-    width: 170px;
-    height: 40px;
-}
-body.dark div#review_form a.star-5::after{
-    content: '';
-    display: inline-block;
-    background: url('../img/stars_5_of_5_dark.png');
-    width: 170px;
-    height: 40px;
-}
+
+
 body.sepia form#commentform div.comment-form-rating{
     background: #e5d2d8;
     padding: 10px;
@@ -145,4 +34,13 @@ body.sepia form#commentform div.comment-form-rating:before{
     position: absolute;
     top: 5px;
     left: 45%;
+}
+body.light div.rating-star-box img.dark, body.light div.rating-star-box img.sepia{
+    display: none;
+}
+body.sepia div.rating-star-box img.dark, body.sepia div.rating-star-box img.light{
+    display: none;
+}
+body.dark div.rating-star-box img.sepia, body.dark div.rating-star-box img.light{
+    display: none;
 }

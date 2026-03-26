@@ -23,9 +23,7 @@ get_header(); ?>
 <main class="single-product">
     <?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
-
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
-
 		<?php endwhile; // end of the loop. ?>
 
 	<?php
@@ -55,10 +53,16 @@ get_header(); ?>
                 <?php }
             ?></div>
         <?php }
-        echo wpautop(the_content());
-        woocommerce_get_template( 'single-product-reviews.php' );
-		do_action( 'woocommerce_after_main_content' );
-	?>
+        ?><div class="single-content">
+            <?php echo wpautop(the_content());
+            ?><div class="single-top-left-tape tape"></div>
+            <div class="single-top-right-tape tape"></div>
+            <div class="single-bottom-left-tape tape"></div>
+            <div class="single-bottom-right-tape tape"></div>
+        </div>
+        <div class="blog-comments">
+            <?php woocommerce_get_template( 'single-product-reviews.php' );
+        ?></div>
     <div id="mode-selector-wrapper" class="light">
         <div id="mode-selector">
             <img src="<?php echo get_theme_file_uri('/img/glasses_80.png'); ?>" alt="a simple illustration of glasses with black frames" class="selection selected-glasses" data-mode="light"/>

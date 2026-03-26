@@ -370,6 +370,7 @@ body.sepia div.blog-comments p.comment-form-author input[type="text"]{
     border-bottom: solid #4f3b26 4px;
     border-left: solid #4f3b26 5px;
     background-color: transparent;
+    color: #4f3b26
 }
 body.sepia div.blog-comments p.comment-form-email input[type="email"]{
     border-top: solid #4f3b26 7px;
@@ -377,6 +378,7 @@ body.sepia div.blog-comments p.comment-form-email input[type="email"]{
     border-bottom: solid #4f3b26 5px;
     border-left: solid #4f3b26 3px;
     background-color: transparent;
+    color: #4f3b26
 }
 body.sepia div.blog-comments input#wp-comment-cookies-consent{
     border-top: solid #4f3b26 4px;
@@ -657,6 +659,7 @@ body.dark div.blog-comments p.comment-form-author input[type="text"]{
     border-bottom: solid rgb(221, 221, 221) 4px;
     border-left: solid rgb(221, 221, 221) 5px;
     background-color: transparent;
+    color: rgb(221, 221, 221);
 }
 body.dark div.blog-comments p.comment-form-email input[type="email"]{
     border-top: solid rgb(221, 221, 221) 7px;
@@ -664,6 +667,7 @@ body.dark div.blog-comments p.comment-form-email input[type="email"]{
     border-bottom: solid rgb(221, 221, 221) 5px;
     border-left: solid rgb(221, 221, 221) 3px;
     background-color: transparent;
+    color: rgb(221, 221, 221);
 }
 body.dark div.blog-comments input#wp-comment-cookies-consent{
     border-top: solid rgb(221, 221, 221) 4px;
