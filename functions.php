@@ -39,12 +39,12 @@ function story_custom_post_types() {
 }
 add_action('init', 'story_custom_post_types');
 //file types------------------------------------------------------------------------------
-function tomc_mime_types($mime_types){
+function jozie_mime_types($mime_types){
     $mime_types['epub'] = 'application/epub+zip'; 
     unset($mime_types['png']); 
     return $mime_types;
 }
-add_filter('upload_mimes', 'tomc_mime_types', 1, 1);
+add_filter('upload_mimes', 'jozie_mime_types', 1, 1);
 // woocommerce support
 add_action( 'after_setup_theme', 'jozie_enable_woocommerce_support' );
 function jozie_enable_woocommerce_support() {
@@ -58,3 +58,25 @@ function jozie_marketplace_remove_product_tabs( $tabs ) {
     return $tabs;
 }
 add_filter( 'woocommerce_product_tabs', 'jozie_marketplace_remove_product_tabs', 98 );
+// custom product filter------------------------------------------------------------------
+function jozie_product_formats(){
+    $product_id = get_the_ID(); // Get the current product's ID
+    $terms = wp_get_post_terms( $product_id, 'product_cat' );
+    if (count($terms) > 0){
+        $term = $terms[0];
+        echo '<p>This is an ' . $term->name . '.';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_product_formats', 9);
+
+function jozie_read_sample(){
+    $product_id = get_the_ID();
+    $sample = get_post_meta($product_id, 'book_excerpt', true);
+    if ($sample){
+        ?><p class="sample-link">read a sample</p>
+        <div class="sample-div hidden"><?php echo $sample ?></div>
+    <?php } else{
+        echo 'nope!';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_read_sample', 30);
