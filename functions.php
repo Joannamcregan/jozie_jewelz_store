@@ -61,10 +61,30 @@ add_filter( 'woocommerce_product_tabs', 'jozie_marketplace_remove_product_tabs',
 // custom product filter------------------------------------------------------------------
 function jozie_product_formats(){
     $product_id = get_the_ID(); // Get the current product's ID
-    $terms = wp_get_post_terms( $product_id, 'product_cat' );
-    if (count($terms) > 0){
-        $term = $terms[0];
-        echo '<p>This is an ' . $term->name . '.';
+    $cats = wp_get_post_terms( $product_id, 'product_cat');
+    if ($cats){
+        $cat = $cats[0];
+        echo '<p>This is book is in ' .  $cat->name . ' format.';        
+        $alternates = get_post_meta($product_id, 'other_format', true);
+        if ($alternates){
+            ?><div class="alternate-section">
+                <p class="centered-text">It's also available in 
+                    <?php for ($i = 0; $i < count($alternates); $i++){
+                        $alternate = $alternates[$i];
+                        $alternate_cats = wp_get_post_terms( $alternate, 'product_cat');
+                        if (count($alternate_cats) > 0){
+                            $alternate_cat = $alternate_cats[0];
+                            echo '<a href="' . get_the_permalink($alternate) . '">' . $alternate_cat->name . '</a>';
+                            if (count($alternates) > 2 && $i == count($alternates) - 2){
+                                echo ', and ';
+                            } else if (count($alternates) == 2 && $i < count($alternates) - 1){
+                                echo ' and ';
+                            }
+                        }
+                    }
+                ?></p>
+            </div>
+        <?php }
     }
 }
 add_action( 'woocommerce_single_product_summary', 'jozie_product_formats', 9);

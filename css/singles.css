@@ -1,10 +1,10 @@
 div.single-content{
-    padding: 20px;
+    padding: 20px 40px;
     position: relative;
     max-width: 750px;
     margin: 0px auto 40px auto;
 }
-@media screen and (min-width: 400px){
+@media screen and (max-width: 500px){
     div.single-content{
         padding: 20px 10px;
     }

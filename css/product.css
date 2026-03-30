@@ -53,3 +53,9 @@ div#rating-star-container{
 div.rating-star-box{
     width: fit-content;
 }
+select#rating{
+    display: block !important;
+}
+div.product p.stock{
+    display: none !important;
+}
