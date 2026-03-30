@@ -17,7 +17,10 @@
 
 defined( 'ABSPATH' ) || exit;
 
-global $product;
+global $product, $wpdb;
+$comments_table = $wpdb->prefix .  "comments";
+$meta_table = $wpdb->prefix . "commentmeta";
+$post = get_the_ID();
 
 if ( ! comments_open() ) {
 	return;
@@ -39,27 +42,19 @@ if ( ! comments_open() ) {
 			?>
 		</h2>
 
-		<?php if ( have_comments() ) : ?>
-			<ol class="commentlist">
-				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
-			</ol>
-
-			<?php
-			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
-				echo '<nav class="woocommerce-pagination">';
-				paginate_comments_links(
-					apply_filters(
-						'woocommerce_comment_pagination_args',
-						array(
-							'prev_text' => is_rtl() ? '&rarr;' : '&larr;',
-							'next_text' => is_rtl() ? '&larr;' : '&rarr;',
-							'type'      => 'list',
-						)
-					)
-				);
-				echo '</nav>';
-			endif;
-			?>
+		<?php $comments = $wpdb->get_results("SELECT c.comment_author, c.comment_content, m.meta_value as rating, month(c.comment_date) as comment_month, day(c.comment_date) as comment_day, year(c.comment_date) as comment_year from $comments_table c JOIN $meta_table m ON c.comment_id = m.comment_id AND m.meta_key = 'rating' WHERE comment_post_ID = $post AND comment_type = 'review';"); ?>
+		<?php if ($comments) : ?>
+			<?php foreach($comments as $comment): ?>
+				<div class="tomc-product-single-review">
+					<p class="<?php echo 'tomc-product-single-review-stars-' . $comment->rating; ?>"><?php echo '(' . $comment->rating . '/5)'; ?></p>
+					<p style="white-space: pre-line">
+						<?php echo '"' . $comment->comment_content . '"'; ?>
+					</p>
+					<p class="right-text">
+						<?php echo '-' . $comment->comment_author . ' (' . $comment->comment_month . '/' . $comment->comment_day . '/' . $comment->comment_year . ')'; ?>
+					</p>
+				</div>
+			<?php endforeach; ?>
 		<?php else : ?>
 			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
 		<?php endif; ?>
