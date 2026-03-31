@@ -30,7 +30,7 @@ class FrontPage {
     this.acceptCookies = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#accept-cookies');
     this.newsletterSection = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#newsletter-section');
     this.events();
-    this.initializeTheme();
+    // this.initializeTheme();
   }
   events() {
     this.selections.on('click', e => {

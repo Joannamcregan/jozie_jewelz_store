@@ -15,7 +15,7 @@ class FrontPage{
         this.acceptCookies = u('#accept-cookies');
         this.newsletterSection = u('#newsletter-section');
         this.events();
-        this.initializeTheme();
+        // this.initializeTheme();
     }
     events(){
         this.selections.on('click', (e)=>{

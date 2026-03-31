@@ -5,19 +5,36 @@
     <meta name = "viewport" content = "width=device-width", initial-scale=1>
     <!-- <meta property="og:image" content="<?php echo get_theme_file_uri('/images/screenshot.png'); ?>" />
     <meta name="twitter:image" content="<?php echo get_theme_file_uri('/images/screenshot.png'); ?>"> -->
-    <title><?php
-            if (is_front_page()) {
-                echo 'Home | ';
-                bloginfo('name');
+    <title>
+        <?php if (is_front_page()) {
+            echo 'Home | ';
+            bloginfo('name');
+        }
+        else {
+            wp_title(' | ', true, 'right');
+            bloginfo('name');
+        }
+    ?></title>
+    <script>
+        (function () {
+            let chosenTheme = localStorage.getItem('theme');
+            if (!(chosenTheme)){
+                let prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                chosenTheme = prefersDark ? 'dark' : 'light';
             }
-            else {
-                wp_title(' | ', true, 'right');
-                bloginfo('name');
+            if (chosenTheme){
+                console.log('the instant theme is ' + chosenTheme);
+                // document.body.classList.add(chosenTheme);
+                document.documentElement.setAttribute('data-theme', chosenTheme);
             }
-        ?></title>
+
+            // Apply the theme to the document element instantly
+            // document.documentElement.setAttribute('data-theme', currentTheme);
+        })();
+    </script>
     <?php wp_head(); ?>
 </head>
-<body class="light">
+<body>
 <header>
     <div id="main-heading-link-section">
         <a href="<?php echo esc_url(site_url()) ?>" id="main-heading-home-link">Jozie Jewelz Writes</a>

@@ -12,7 +12,7 @@ div#other-retailers-section{
 div.product div.summary div.woocommerce-product-rating{
     display: none;
 }
-body.sepia form#commentform div.comment-form-rating{
+[data-theme="sepia"] form#commentform div.comment-form-rating{
     background: #e5d2d8;
     padding: 10px;
     position: relative;
@@ -21,7 +21,7 @@ body.sepia form#commentform div.comment-form-rating{
     0.5px -1px 2px rgba(79, 79, 79, 0.7),
     -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
 }
-body.sepia form#commentform div.comment-form-rating:before{
+[data-theme="sepia"] form#commentform div.comment-form-rating:before{
     content: '';
     display: inline-block;
     width: 13px;
@@ -37,13 +37,13 @@ body.sepia form#commentform div.comment-form-rating:before{
     top: 5px;
     left: 45%;
 }
-body.light div.rating-star-box img.dark, body.light div.rating-star-box img.sepia{
+[data-theme="light"] div.rating-star-box img.dark, [data-theme="light"] div.rating-star-box img.sepia{
     display: none;
 }
-body.sepia div.rating-star-box img.dark, body.sepia div.rating-star-box img.light{
+[data-theme="sepia"] div.rating-star-box img.dark, [data-theme="sepia"] div.rating-star-box img.light{
     display: none;
 }
-body.dark div.rating-star-box img.sepia, body.dark div.rating-star-box img.light{
+[data-theme="dark"] div.rating-star-box img.sepia, [data-theme="dark"] div.rating-star-box img.light{
     display: none;
 }
 div#rating-star-container{
@@ -64,13 +64,13 @@ div.product p.stock{
 p.jozie-product-single-review-stars-5, p.jozie-product-single-review-stars-4, p.jozie-product-single-review-stars-3, p.jozie-product-single-review-stars-2, p.jozie-product-single-review-stars-1{
     margin: 0px 0px -20px 0px;
 }
-body.light p.jozie-product-single-review-stars-5::before{
+[data-theme="light"] p.jozie-product-single-review-stars-5::before{
     content: '';
     display: inline-block;    
     background: url('../img/stars_5_of_5_light.png');
 }
 
-body.light p.jozie-product-single-review-stars-4::before{
+[data-theme="light"] p.jozie-product-single-review-stars-4::before{
     content: '';
     display: inline-block;    
     background: url('../img/stars_4_of_5_light.png');
@@ -78,12 +78,12 @@ body.light p.jozie-product-single-review-stars-4::before{
     height: 40px;
     margin: 0px 20px -15px 0px
 }
-body.light div.jozie-product-single-review{
+[data-theme="light"] div.jozie-product-single-review{
     border-bottom: solid rgb(22, 22, 22) 5px;
     border-radius: 0px 0px 3px 15px;
     padding-left: 15px;
 }
-body.sepia div.jozie-product-single-review{
+[data-theme="sepia"] div.jozie-product-single-review{
     background: #f8f7f0;
     padding: 10px;
     width: fit-content;
@@ -95,7 +95,7 @@ body.sepia div.jozie-product-single-review{
     margin-top: 5px;
     margin-left: 5px;
 }
-body.sepia div.jozie-product-single-review::before{
+[data-theme="sepia"] div.jozie-product-single-review::before{
     content: '';
     display: inline-block;
     width: 13px;
@@ -111,7 +111,7 @@ body.sepia div.jozie-product-single-review::before{
     top: 2px;
     left: 53%;
 }
-body.dark div.jozie-product-single-review{
+[data-theme="dark"] div.jozie-product-single-review{
     border-bottom: solid rgb(221, 221, 221) 5px;
     border-radius: 0px 0px 3px 15px;
     padding-left: 15px;
