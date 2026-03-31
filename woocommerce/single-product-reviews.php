@@ -45,12 +45,12 @@ if ( ! comments_open() ) {
 		<?php $comments = $wpdb->get_results("SELECT c.comment_author, c.comment_content, m.meta_value as rating, month(c.comment_date) as comment_month, day(c.comment_date) as comment_day, year(c.comment_date) as comment_year from $comments_table c JOIN $meta_table m ON c.comment_id = m.comment_id AND m.meta_key = 'rating' WHERE comment_post_ID = $post AND comment_type = 'review';"); ?>
 		<?php if ($comments) : ?>
 			<?php foreach($comments as $comment): ?>
-				<div class="tomc-product-single-review">
-					<p class="<?php echo 'tomc-product-single-review-stars-' . $comment->rating; ?>"><?php echo '(' . $comment->rating . '/5)'; ?></p>
+				<div class="jozie-product-single-review">
+					<p class="<?php echo 'jozie-product-single-review-stars-' . $comment->rating; ?>"><?php echo '(' . $comment->rating . '/5)'; ?></p>
 					<p style="white-space: pre-line">
 						<?php echo '"' . $comment->comment_content . '"'; ?>
 					</p>
-					<p class="right-text">
+					<p class="review-by">
 						<?php echo '-' . $comment->comment_author . ' (' . $comment->comment_month . '/' . $comment->comment_day . '/' . $comment->comment_year . ')'; ?>
 					</p>
 				</div>
@@ -67,7 +67,7 @@ if ( ! comments_open() ) {
 				$commenter    = wp_get_current_commenter();
 				$comment_form = array(
 					/* translators: %s is product title */
-					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'woocommerce' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
+					'title_reply'         => esc_html__( 'Add a review', 'woocommerce' ),
 					/* translators: %s is product title */
 					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'woocommerce' ),
 					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title" role="heading" aria-level="3">',

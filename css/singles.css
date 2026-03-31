@@ -105,7 +105,7 @@ div.blog-comments p.logged-in-as{
     font-family: 'handwritten-text', sans-serif;
     font-size: 26px;
 }
-div.blog-comments p.logged-in-as a{
+div.blog-comments p.logged-in-as a, div.blog-comments a#cancel-comment-reply-link{
     white-space: nowrap;
 }
 div.blog-comments label[for="comment"]{
@@ -423,7 +423,7 @@ body.sepia div.blog-comments h3#comments::before{
     top: 2px;
     left: 53%;
 }
-body.sepia ol.commentlist{
+body.sepia div.blog-comments li.comment.even{
     background: #f8f7f0;
     padding: 10px;
     width: fit-content;
@@ -432,14 +432,22 @@ body.sepia ol.commentlist{
     0.5px -1px 2px rgba(79, 79, 79, 0.7),
     -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
     z-index: 500;
-    margin-top: -5px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
-body.sepia div.blog-comments li.comment{
-    border-bottom: solid #4f3b26 5px;
-    border-radius: 0px 0px 3px 15px;
-    padding-left: 15px;
+body.sepia div.blog-comments li.comment.odd{
+    background: #f8f7f0;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+    box-shadow: 
+    0.5px -1px 2px rgba(79, 79, 79, 0.7),
+    -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
+    z-index: 500;
+    margin-top: 5px;
+    margin-right: 5px;
 }
-body.sepia ol.commentlist::before{
+body.sepia div.blog-comments li.comment::before{
     content: '';
     display: inline-block;
     width: 13px;
@@ -492,7 +500,7 @@ body.sepia div.blog-comments p.logged-in-as{
     0.5px -1px 2px rgba(79, 79, 79, 0.7),
     -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
     z-index: 500;
-    margin-top: -35px;
+    margin-top: -15px;
     margin-left: -15px;
     transform: rotate(-6deg);
 }
@@ -652,6 +660,11 @@ body.dark div.blog-comments textarea#comment{
     border-left: solid rgb(221, 221, 221) 3px;
     background: #151616;
     color: rgb(221, 221, 221);
+}
+body.dark div.blog-comments li.comment{
+    border-bottom: solid rgb(221, 221, 221) 5px;
+    border-radius: 0px 0px 3px 15px;
+    padding-left: 15px;
 }
 body.dark div.blog-comments p.comment-form-author input[type="text"]{
     border-top: solid rgb(221, 221, 221) 6px;

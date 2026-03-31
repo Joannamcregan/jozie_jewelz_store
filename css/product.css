@@ -9,7 +9,9 @@ div#other-retailers-section{
     border: solid red 2px;
 }
 
-
+div.product div.summary div.woocommerce-product-rating{
+    display: none;
+}
 body.sepia form#commentform div.comment-form-rating{
     background: #e5d2d8;
     padding: 10px;
@@ -58,4 +60,64 @@ select#rating{
 }
 div.product p.stock{
     display: none !important;
+}
+p.jozie-product-single-review-stars-5, p.jozie-product-single-review-stars-4, p.jozie-product-single-review-stars-3, p.jozie-product-single-review-stars-2, p.jozie-product-single-review-stars-1{
+    margin: 0px 0px -20px 0px;
+}
+body.light p.jozie-product-single-review-stars-5::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_5_of_5_light.png');
+}
+
+body.light p.jozie-product-single-review-stars-4::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_4_of_5_light.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 20px -15px 0px
+}
+body.light div.jozie-product-single-review{
+    border-bottom: solid rgb(22, 22, 22) 5px;
+    border-radius: 0px 0px 3px 15px;
+    padding-left: 15px;
+}
+body.sepia div.jozie-product-single-review{
+    background: #f8f7f0;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+    box-shadow: 
+    0.5px -1px 2px rgba(79, 79, 79, 0.7),
+    -0.5px 1.5px 2px rgba(79, 79, 79, 0.9);
+    z-index: 500;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+body.sepia div.jozie-product-single-review::before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #81199b;
+    border-top: solid rgba(79, 79, 79, 0.7) 1.5px;
+    border-left: solid rgba(79, 79, 79, 0.7) 1px;
+    border-right: solid rgba(79, 79, 79, 0.7) 1px;
+    border-bottom: solid rgba(79, 79, 79, 0.7) 2.5px;
+    box-shadow: 0px 2px 2px rgba(79, 79, 79, 1);
+    position: absolute;
+    top: 2px;
+    left: 53%;
+}
+body.dark div.jozie-product-single-review{
+    border-bottom: solid rgb(221, 221, 221) 5px;
+    border-radius: 0px 0px 3px 15px;
+    padding-left: 15px;
+}
+div.jozie-product-single-review p.review-by{
+    text-align: right;
+    font-family: 'playball', serif;
+    font-size: 26px;
 }
