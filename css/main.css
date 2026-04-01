@@ -47,7 +47,10 @@ body{
 }
 @media screen and (max-width: 800px) {
     body{
-        padding: 20px 5px 50px 5px;
+        padding: 20px 0px 50px 0px;
+    }
+    main{
+        padding: 10px;
     }
     .mobile{
         display: block !important;
@@ -946,7 +949,16 @@ footer{
     height: 40px;
     cursor: pointer;
 }
-.selected-glasses{
+/* .selected-glasses{
+    transform: rotate(-10deg);
+} */
+ [data-theme="light"] #light-glasses{
+    transform: rotate(-10deg);
+}
+[data-theme="sepia"] #sepia-glasses{
+    transform: rotate(-10deg);
+}
+[data-theme="dark"] #dark-glasses{
     transform: rotate(-10deg);
 }
 @media screen and (max-width: 410px) {

@@ -54,6 +54,7 @@ div#rating-star-container{
 }
 div.rating-star-box{
     width: fit-content;
+    cursor: pointer;
 }
 select#rating{
     display: block !important;
@@ -68,15 +69,121 @@ p.jozie-product-single-review-stars-5, p.jozie-product-single-review-stars-4, p.
     content: '';
     display: inline-block;    
     background: url('../img/stars_5_of_5_light.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
 }
-
 [data-theme="light"] p.jozie-product-single-review-stars-4::before{
     content: '';
     display: inline-block;    
     background: url('../img/stars_4_of_5_light.png');
     width: 170px;
     height: 40px;
-    margin: 0px 20px -15px 0px
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="light"] p.jozie-product-single-review-stars-3::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_3_of_5_light.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="light"] p.jozie-product-single-review-stars-2::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_2_of_5_light.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="light"] p.jozie-product-single-review-stars-1::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_1_of_5_light.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="sepia"] p.jozie-product-single-review-stars-5::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_5_of_5_sepia.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="sepia"] p.jozie-product-single-review-stars-4::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_4_of_5_sepia.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="sepia"] p.jozie-product-single-review-stars-3::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_3_of_5_sepia.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="sepia"] p.jozie-product-single-review-stars-2::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_2_of_5_sepia.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="sepia"] p.jozie-product-single-review-stars-1::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_1_of_5_sepia.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="dark"] p.jozie-product-single-review-stars-5::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_5_of_5_dark.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="dark"] p.jozie-product-single-review-stars-4::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_4_of_5_dark.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="dark"] p.jozie-product-single-review-stars-3::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_3_of_5_dark.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="dark"] p.jozie-product-single-review-stars-2::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_2_of_5_dark.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
+}
+[data-theme="dark"] p.jozie-product-single-review-stars-1::before{
+    content: '';
+    display: inline-block;    
+    background: url('../img/stars_1_of_5_dark.png');
+    width: 170px;
+    height: 40px;
+    margin: 0px 15px -15px 0px;
 }
 [data-theme="light"] div.jozie-product-single-review{
     border-bottom: solid rgb(22, 22, 22) 5px;
