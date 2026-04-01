@@ -23,13 +23,8 @@
                 chosenTheme = prefersDark ? 'dark' : 'light';
             }
             if (chosenTheme){
-                console.log('the instant theme is ' + chosenTheme);
-                // document.body.classList.add(chosenTheme);
                 document.documentElement.setAttribute('data-theme', chosenTheme);
             }
-
-            // Apply the theme to the document element instantly
-            // document.documentElement.setAttribute('data-theme', currentTheme);
         })();
     </script>
     <?php wp_head(); ?>

@@ -35,12 +35,11 @@ class FrontPage {
   events() {
     this.selections.on('click', e => {
       const selected = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()(e.target);
-      this.selections.removeClass('selected-glasses');
+      // this.selections.removeClass('selected-glasses');
       setTimeout(e => {
-        selected.addClass('selected-glasses');
-        this.body.removeClass('light dark sepia');
+        // selected.addClass('selected-glasses');
+        document.documentElement.setAttribute('data-theme', selected.data('mode'));
         this.footer.removeClass('light dark sepia');
-        this.body.addClass(selected.data('mode'));
         this.footer.addClass(selected.data('mode'));
         localStorage.setItem('theme', selected.data('mode'));
       }, 100);
