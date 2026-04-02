@@ -19,44 +19,37 @@ body.myspace{
 .myspace-mobile{
     display: none;
 }
-@media screen and (max-width: 400px) {
-    .myspace-mobile{
-        display: block !important;
-    }
-    .myspace-desktop{
-        display: none !important;
-    }
-    body.myspace #mobile-menu-link{
-        transform: rotate(0deg) !important;
-        padding-top: 20px;
-    }
-}
 body.myspace header{
     background: rgb(56, 10, 48);
     border-left: double #b3318c 15px;
     border-bottom: double #b3318c 15px;
     border-right: double #b3318c 15px;
     box-shadow: 0px 0px 10px black;
-    display: flex;
-    justify-content: center;
     padding: 10px 10px 0px 10px;
     margin: 0px;
-    width: fit-content;
     position: absolute;
     top: -1px;
     right: 20px;
-}
-body.myspace header nav{
+    width: fit-content;
     display: flex;
-    flex-direction: row;
-    padding: 0px;
-    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+body.myspace header div.header-top-section, body.myspace header div.header-bottom-section{
+    display: flex;
+    justify-content: center;
 }
 body.myspace header a, body.myspace header span{
     transform: rotate(0deg);
     color: rgb(255, 198, 185);
-    padding: 10px 10px;
     opacity: 1;
+}
+body.myspace div.header-top-section a, body.myspace div.header-top-section span{
+    padding: 20px 10px 10px 10px;
+}
+body.myspace div.header-bottom-section a, body.myspace div.header-bottom-section span{
+    padding: 10px 10px 20px 10px;
 }
 #myspace-main{
     display: grid;
@@ -82,6 +75,9 @@ body.myspace header a, body.myspace header span{
 #glitter-jozie-jewelz-writes{
     grid-area: jozieJewelzWrites;
     margin: auto;
+}
+#glitter-jozie-jewelz-writes img{
+    margin-top: 40px;
 }
 #basic-info{
     background: rgb(56, 10, 48);
@@ -241,7 +237,7 @@ body.myspace header a, body.myspace header span{
         "myspaceSection0"
         "myspaceSection1";
         max-width: 1000px;
-        margin: 80px auto;
+        margin: 120px auto;
         padding-bottom: 200px;
     }
     #basic-info{
@@ -249,6 +245,9 @@ body.myspace header a, body.myspace header span{
     }
     #glitter-jozie-jewelz-writes{
         margin: 20px 20px 20px 100px;
+    }
+    #glitter-jozie-jewelz-writes img{
+        margin-top: 0px;
     }
     #myspace-main iframe{
         display: block;
@@ -288,6 +287,9 @@ body.myspace header a, body.myspace header span{
     }
 }
 @media screen and (max-width: 400px){
+    body.myspace nav a{
+        font-size: 26px;
+    }
     #glitter-jozie-jewelz-writes{
         margin: 20px auto;
     }
@@ -297,8 +299,6 @@ body.myspace header a, body.myspace header span{
     #newsletter-section .eo-form-wrapper{
         min-width: 200px !important;
     }
-}
-@media screen and (max-width: 400px){
     #top-friends{
         width: 220px;
         height: 480px;
@@ -306,7 +306,7 @@ body.myspace header a, body.myspace header span{
     #top-friends img{
         padding-top: 10px;
         width: 100px;
-    }
+    }  
 }
 body.myspace footer{
     background: rgb(56, 10, 48);

@@ -10,12 +10,18 @@
 </head>
 <body class="myspace">
 <header>
-    <span class="site-header__menu-trigger myspace-mobile" tabindex="-1" id="mobile-menu-link">menu</span>
-    <nav class="myspace-desktop">
-        <a>stories</a>
-        <a>novels</a>
-        <a>e-zines</a>
-        <a>blog</a>
+    <span class="site-header__menu-trigger myspace-mobile" tabindex="-1">menu</span>
+    <nav id="myspace-mobile-menu">
+        <div class="header-top-section">
+            <a>stories</a>
+            <a>novels</a>
+            <a>e-zines</a>
+        </div>
+        <div class="header-bottom-section">
+            <a>about</a>
+            <a>contact</a>
+            <a>blog</a>
+        </div>
     </nav>
 </header>
 </div>
