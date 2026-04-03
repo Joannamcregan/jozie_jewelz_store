@@ -39,7 +39,10 @@
             <a id="zines-link">e-zines</a>
         </div>
     </div>
-    <span class="site-header__menu-trigger mobile" tabindex="-1" id="mobile-menu-link">menu</span>
+    <div class="mobile" tabindex="-1" id="mobile-menu-link">
+        <p>menu</p>
+        <div class="menu-link-overlay"></div>
+    </div>
     <nav class="desktop" id="mobile-menu">
         <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace') . '#about-me');?>">bio</a>
         <a href="<?php echo esc_url(site_url('/blog')); ?>">blog</a>

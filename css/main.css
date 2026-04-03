@@ -226,12 +226,52 @@ header{
     color: rgb(222, 203, 255);
 }
 #mobile-menu-link{
+    z-index: 1000;
+    margin: -30px 20px 0px 0px;
+    background: linear-gradient(30deg, rgb(204, 204, 204), rgb(233, 232, 232) 40%, rgb(216, 216, 216) 50%, rgb(233, 232, 232) 60%, rgb(204, 204, 204) 70%);
+    border: solid rgb(204, 204, 204) 5px;
+    box-shadow: 0.3px 2px 1px rgba(92, 92, 92, 0.5) inset,
+    -0.3px -0.7px 1px rgba(92, 92, 92, 0.5) inset,
+    0px 6px 10px rgba(92, 92, 92, 0.8),
+    0px 0px 10px rgba(92, 92, 92, 0.8);
+    height: 120px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+div.menu-link-overlay{
+    height: 120px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background: linear-gradient(rgb(255, 248, 206), rgba(255, 248, 206, 0.4))
+}
+#mobile-menu-link p{
     font-family: "amatic", sans-serif;
     font-size: 34px;
     transform: rotate(-8deg);
-    width: fit-content;
-    margin-top: -30px;
-    z-index: 1000;
+    text-decoration: underline;
+    width: 100px;
+    text-align: center;
+}
+@media screen and (max-width: 440px) {
+    #mobile-menu-link, div.menu-link-overlay{
+        height: 90px;
+        width: 75px;
+        margin: -30px 5px 0px 0px
+    }
+    #mobile-menu-link p{
+        font-size: 26px;
+        width: 75px;
+    }
+    #main-heading-writing-links{
+        flex-wrap: wrap;
+    }
 }
 header nav{
     width: fit-content;
@@ -248,21 +288,21 @@ header nav a{
     position: relative;
     opacity: 0.5;
 }
-[data-theme="light"] #mobile-menu-link, [data-theme="light"] header nav a{
-    color: rgb(15, 103, 106);
+[data-theme="light"] #mobile-menu-link p, [data-theme="light"] header nav a{
+    color: rgb(106, 15, 32);
     text-shadow: 
-    0px 0px 2px rgb(15, 91, 106, 0.7), 
-    0px 0px 4px rgb(15, 91, 106, 0.5),
-    0px 0px 4px rgb(15, 91, 106, 0.3);
+    0px 0px 2px rgb(106, 15, 32, 0.7), 
+    0px 0px 4px rgb(106, 15, 32, 0.5),
+    0px 0px 4px rgb(106, 15, 32, 0.3);
 }
-[data-theme="sepia"] #mobile-menu-link, [data-theme="sepia"] header nav a{
+[data-theme="sepia"] #mobile-menu-link p, [data-theme="sepia"] header nav a{
     color: rgb(27, 60, 53);
     text-shadow: 
     0px 0px 2px rgb(27, 60, 53, 0.7), 
     0px 0px 4px rgb(27, 60, 53, 0.5),
     0px 0px 4px rgb(27, 60, 53, 0.3);
 }
-[data-theme="dark"] #mobile-menu-link, [data-theme="dark"] header nav a{
+[data-theme="dark"] #mobile-menu-link p, [data-theme="dark"] header nav a{
     color: rgb(101, 250, 255);
     text-shadow: 
     0px 0px 2px rgba(0, 142, 171, 0.7), 
@@ -273,52 +313,6 @@ main{
     max-width: 900px;
     margin: auto;
 }
-/* #main-heading-section{
-    width: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 80px;
-}
-@media screen and (min-width: 801px) {
-    #main-heading-section{
-        margin-top: -130px;
-    }
-}
-#main-heading-section h1{
-    font-family: 'handwritten-text', serif;
-    font-size: 44px;
-    margin: 5px;
-    max-width: 650px;
-}
-#main-heading-section p{
-    text-align: right;
-    font-size: 30px;
-    font-family: 'handwritten-text', serif;
-    margin-top: 5px;
-}
-[data-theme="light"] #main-heading-section{
-    color: rgb(2, 8, 76);
-    text-shadow: 
-    0px 0px 3px rgba(5, 14, 116, 0.7), 
-    0px 0px 7px rgba(79, 20, 181, 0.5),
-    0px 0px 11px rgba(79, 20, 181, 0.3);
-}
-[data-theme="dark"] #main-heading-section{
-    color: rgb(255, 160, 96);
-    text-shadow:
-    0px 0px 3px rgb(184, 86, 0), 
-    0px 0px 7px rgba(184, 86, 0, 0),
-    0px 0px 11px rgba(184, 86, 0, 0);
-}
-[data-theme="sepia"] #main-heading-section{
-    color: rgb(39, 21, 69);
-    text-shadow: 
-    0px 0px 3px rgba(31, 24, 87, 0.7), 
-    0px 0px 7px rgba(24, 53, 87, 0.5),
-    0px 0px 11px rgba(24, 53, 87, 0.3);
-} */
 .book-collection--left{
     margin-right: 200px;
 }
