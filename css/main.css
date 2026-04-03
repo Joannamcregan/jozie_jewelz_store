@@ -33,6 +33,9 @@
     font-family: 'rocksalt';
     src: url('../fonts/rocksalt.ttf');
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'sans', sans-serif;
     font-weight: 900;

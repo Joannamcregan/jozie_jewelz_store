@@ -11,16 +11,16 @@
 <body class="myspace">
 <header>
     <span class="site-header__menu-trigger myspace-mobile" tabindex="-1">menu</span>
-    <nav id="myspace-mobile-menu">
+    <nav>
         <div class="header-top-section">
-            <a>stories</a>
-            <a>novels</a>
+            <a href="<?php echo esc_url(site_url() . '#short-stories-section'); ?>">stories</a>
+            <a href="<?php echo esc_url(site_url() . '#novels-section'); ?>">novels</a>
             <a>e-zines</a>
         </div>
         <div class="header-bottom-section">
-            <a>about</a>
-            <a>contact</a>
-            <a>blog</a>
+            <a href="#about-me">bio</a>
+            <a href="#contact-info">connect</a>
+            <a href="<?php echo esc_url(site_url('/blog')); ?>">blog</a>
         </div>
     </nav>
 </header>

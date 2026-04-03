@@ -41,9 +41,9 @@
     </div>
     <span class="site-header__menu-trigger mobile" tabindex="-1" id="mobile-menu-link">menu</span>
     <nav class="desktop" id="mobile-menu">
-        <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace'));?>">bio</a>
-        <a  href="<?php echo esc_url(site_url('/blog')); ?>">blog</a>
-        <a>connect</a>
+        <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace') . '#about-me');?>">bio</a>
+        <a href="<?php echo esc_url(site_url('/blog')); ?>">blog</a>
+        <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace') . '#contact-info');?>">connect</a>
     </nav>
 </header>
 </div>

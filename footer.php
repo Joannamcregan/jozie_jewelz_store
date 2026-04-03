@@ -1,6 +1,6 @@
 <footer>
     <div id="policy-section">
-        <p id="privacy-policy-link">privacy policy</p>
+        <p><a id="privacy-policy-link" href="<?php echo esc_url(site_url('/privacy-policy')); ?>">privacy policy</a></p>
         <p  class="cookies--learn-more" id="cookie-policy-link">cookie policy</p>
     </div>
     <div id="copyright-section" class="name-sticker">

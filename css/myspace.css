@@ -357,9 +357,11 @@ body.myspace footer{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 #myspace-policy-section #privacy-policy-link{
     padding: 0px;
+    color: rgb(255, 198, 185);
 }
 #myspace-copyright-section{
     display: block;
