@@ -17,7 +17,5 @@
     </div>
     <?php get_template_part( 'template-parts/mode', 'selector' ); ?>
 </main>
-<div id="ceiling" aria-hidden="true">
-    <div id="ceiling-light" aria-hidden="true"></div>
-</div>
-<?php get_footer(); ?>
+<?php get_template_part( 'template-parts/ceiling', 'lights' );
+get_footer(); ?>

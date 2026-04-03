@@ -34,17 +34,16 @@
     <div id="main-heading-link-section">
         <a href="<?php echo esc_url(site_url()) ?>" id="main-heading-home-link">Jozie Jewelz Writes</a>
         <div id="main-heading-writing-links">
-            <a id="novels-link">novels</a>
-            <a id="stories-link">stories</a>
+            <a id="novels-link"  href="<?php echo esc_url(site_url() . '#novels-section'); ?>">novels</a>
+            <a id="stories-link"  href="<?php echo esc_url(site_url() . '#short-stories-section'); ?>">stories</a>
             <a id="zines-link">e-zines</a>
         </div>
     </div>
     <span class="site-header__menu-trigger mobile" tabindex="-1" id="mobile-menu-link">menu</span>
-    <nav class="desktop">
-        <a>bio</a>
-        <a>blog</a>
+    <nav class="desktop" id="mobile-menu">
+        <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace'));?>">bio</a>
+        <a  href="<?php echo esc_url(site_url('/blog')); ?>">blog</a>
         <a>connect</a>
     </nav>
 </header>
 </div>
-

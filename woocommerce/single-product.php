@@ -64,10 +64,7 @@ get_header(); ?>
         ?></div>
     <?php get_template_part( 'template-parts/mode', 'selector' ); ?>
 </main>
-<div id="ceiling" aria-hidden="true">
-    <div id="ceiling-light" aria-hidden="true"></div>
-</div>
-<?php
+<?php get_template_part( 'template-parts/ceiling', 'lights' );
 get_footer();
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
