@@ -16,9 +16,6 @@ body.myspace{
   position: relative;
   border: solid rgba(255, 255, 255, 0) 1px;
 }
-.myspace-mobile{
-    display: none;
-}
 body.myspace header{
     background: rgb(56, 10, 48);
     border-left: double #b3318c 15px;

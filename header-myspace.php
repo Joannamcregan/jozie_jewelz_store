@@ -10,7 +10,6 @@
 </head>
 <body class="myspace">
 <header>
-    <span class="site-header__menu-trigger myspace-mobile" tabindex="-1">menu</span>
     <nav>
         <div class="header-top-section">
             <a href="<?php echo esc_url(site_url() . '#short-stories-section'); ?>">stories</a>
