@@ -30,15 +30,15 @@ body.myspace header{
     position: absolute;
     top: -1px;
     right: 20px;
-    width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
+}
+body.myspace header nav{
+    display: block;
 }
 body.myspace header div.header-top-section, body.myspace header div.header-bottom-section{
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 body.myspace header a, body.myspace header span{
     transform: rotate(0deg);
@@ -228,6 +228,11 @@ body.myspace div.header-bottom-section a, body.myspace div.header-bottom-section
         width: 200px;
     }
 }
+@media screen and (max-width: 850px) {
+    #basic-info{
+        margin: 40px 0px 0px 0px;
+    }
+}
 @media screen and (max-width: 700px) {
     #myspace-main{
         display: grid;
@@ -241,7 +246,7 @@ body.myspace div.header-bottom-section a, body.myspace div.header-bottom-section
         padding-bottom: 200px;
     }
     #basic-info{
-        margin: 40px auto;
+        margin: 0px;
     }
     #glitter-jozie-jewelz-writes{
         margin: 20px 20px 20px 100px;
@@ -270,6 +275,23 @@ body.myspace div.header-bottom-section a, body.myspace div.header-bottom-section
         margin: 30px 20px 20px 200px;
     }
 }
+@media screen and (max-width: 555px) {
+    body.myspace header nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    body.myspace header div.header-top-section, body.myspace header div.header-bottom-section{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #basic-info{
+        margin: 40px 0px 0px 0px;
+    }
+}
 @media screen and (max-width: 550px) {
     #myspace-main #contact-info{
         margin: 30px 20px 20px 100px;
@@ -292,6 +314,9 @@ body.myspace div.header-bottom-section a, body.myspace div.header-bottom-section
     }
     #glitter-jozie-jewelz-writes{
         margin: 20px auto;
+    }
+    #basic-info{
+        margin: 20px 0px 0px 0px;
     }
     #myspace-main #contact-info{
         margin: 30px auto 20px auto;
