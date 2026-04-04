@@ -5,24 +5,12 @@ class FrontPage{
         this.selections = u('.selection');
         this.body = u('body');
         this.footer = u('footer');
-        this.closeButtons = u('.overlay-close-button');
-        this.privacyPolicyLink = u('#privacy-policy-link');
-        this.privacyPolicy = u('#privacy-policy');
-        this.cookiePolicy = u('#cookie-policy');
-        this.cookieBanner = u('#cookie-banner-container');
-        this.cookiesLearnMore = u('.cookies--learn-more');
-        this.rejectCookies = u('#reject-cookies');
-        this.acceptCookies = u('#accept-cookies');
-        this.newsletterSection = u('#newsletter-section');
         this.events();
-        // this.initializeTheme();
     }
     events(){
         this.selections.on('click', (e)=>{
             const selected = u(e.target);
-            // this.selections.removeClass('selected-glasses');
             setTimeout((e)=>{
-                // selected.addClass('selected-glasses');
                 document.documentElement.setAttribute('data-theme', selected.data('mode'));
                 this.footer.removeClass('light dark sepia');
                 this.footer.addClass(selected.data('mode'));

@@ -20,24 +20,12 @@ class FrontPage {
     this.selections = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('.selection');
     this.body = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('body');
     this.footer = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('footer');
-    this.closeButtons = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('.overlay-close-button');
-    this.privacyPolicyLink = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#privacy-policy-link');
-    this.privacyPolicy = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#privacy-policy');
-    this.cookiePolicy = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#cookie-policy');
-    this.cookieBanner = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#cookie-banner-container');
-    this.cookiesLearnMore = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('.cookies--learn-more');
-    this.rejectCookies = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#reject-cookies');
-    this.acceptCookies = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#accept-cookies');
-    this.newsletterSection = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#newsletter-section');
     this.events();
-    // this.initializeTheme();
   }
   events() {
     this.selections.on('click', e => {
       const selected = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()(e.target);
-      // this.selections.removeClass('selected-glasses');
       setTimeout(e => {
-        // selected.addClass('selected-glasses');
         document.documentElement.setAttribute('data-theme', selected.data('mode'));
         this.footer.removeClass('light dark sepia');
         this.footer.addClass(selected.data('mode'));
@@ -58,6 +46,36 @@ class FrontPage {
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FrontPage);
+
+/***/ },
+
+/***/ "./src/modules/menu.js"
+/*!*****************************!*\
+  !*** ./src/modules/menu.js ***!
+  \*****************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../../umbrella.min.js */ "./umbrella.min.js");
+/* harmony import */ var _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_umbrella_min_js__WEBPACK_IMPORTED_MODULE_0__);
+
+class Menu {
+  constructor() {
+    this.mobileMenu = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#mobile-menu');
+    this.mobileMenuLink = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#mobile-menu-link');
+    this.events();
+  }
+  events(e) {
+    this.mobileMenuLink.on('click', e => {
+      console.log('clicked');
+    });
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Menu);
 
 /***/ },
 
@@ -475,10 +493,13 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/main */ "./src/modules/main.js");
 /* harmony import */ var _modules_rating__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/rating */ "./src/modules/rating.js");
+/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu */ "./src/modules/menu.js");
+
 
 
 const frontPage = new _modules_main__WEBPACK_IMPORTED_MODULE_0__["default"]();
 const rating = new _modules_rating__WEBPACK_IMPORTED_MODULE_1__["default"]();
+const menu = new _modules_menu__WEBPACK_IMPORTED_MODULE_2__["default"]();
 })();
 
 /******/ })()

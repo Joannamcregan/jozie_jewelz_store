@@ -58,9 +58,6 @@ body{
     .mobile{
         display: block !important;
     }
-    .desktop{
-        display: none !important;
-    }
 }
 [data-theme="light"] body{
   --s: 81px; /* control the size*/
@@ -227,17 +224,16 @@ header{
 }
 #mobile-menu-link{
     z-index: 1000;
-    margin: -30px 20px 0px 0px;
-    background: linear-gradient(30deg, rgb(204, 204, 204), rgb(233, 232, 232) 40%, rgb(216, 216, 216) 50%, rgb(233, 232, 232) 60%, rgb(204, 204, 204) 70%);
-    border: solid rgb(204, 204, 204) 5px;
-    box-shadow: 0.3px 2px 1px rgba(92, 92, 92, 0.5) inset,
-    -0.3px -0.7px 1px rgba(92, 92, 92, 0.5) inset,
-    0px 6px 10px rgba(92, 92, 92, 0.8),
-    0px 0px 10px rgba(92, 92, 92, 0.8);
+    margin: -10px 20px 0px 0px;
     height: 120px;
     width: 100px;
     border-radius: 50%;
     position: relative;
+}
+@media screen and (max-width: 800px) {
+    #mobile-menu-link{
+        margin: -30px 20px 0px 0px;
+    }
 }
 div.menu-link-overlay{
     height: 120px;
@@ -249,7 +245,39 @@ div.menu-link-overlay{
     right: 0px;
     border-radius: 50%;
     opacity: 0.5;
-    background: linear-gradient(rgb(255, 248, 206), rgba(255, 248, 206, 0.4))
+}
+[data-theme="light"] #mobile-menu-link{
+    background: linear-gradient(30deg, rgb(204, 204, 204), rgb(233, 232, 232) 40%, rgb(216, 216, 216) 50%, rgb(233, 232, 232) 60%, rgb(204, 204, 204) 70%);
+    border: solid rgb(204, 204, 204) 5px;
+    box-shadow: 0.3px 2px 1px rgba(92, 92, 92, 0.5) inset,
+    -0.3px -0.7px 1px rgba(92, 92, 92, 0.5) inset,
+    0px 6px 10px rgba(92, 92, 92, 0.8),
+    0px 0px 10px rgba(92, 92, 92, 0.8);
+}
+[data-theme="light"] div.menu-link-overlay{
+    background: linear-gradient(rgb(255, 248, 206), rgba(255, 248, 206, 0.6))
+}
+[data-theme="sepia"] #mobile-menu-link{
+    background: linear-gradient(30deg, rgb(181, 181, 181), rgb(218, 218, 218) 40%, rgb(202, 202, 202) 50%, rgb(218, 218, 218) 60%, rgb(181, 181, 181) 70%);
+    border: solid rgb(181, 181, 181) 5px;
+    box-shadow: 0.3px 2px 1px rgba(92, 92, 92, 0.5) inset,
+    -0.3px -0.7px 1px rgba(92, 92, 92, 0.5) inset,
+    0px 6px 10px rgba(92, 92, 92, 0.8),
+    0px 0px 10px rgba(92, 92, 92, 0.8);
+}
+[data-theme="sepia"] div.menu-link-overlay{
+    background: linear-gradient(rgb(252, 236, 201), rgba(252, 236, 201, 0.6))
+}
+[data-theme="dark"] #mobile-menu-link{
+    background: linear-gradient(30deg, rgb(51, 51, 51), rgb(71, 71, 71) 40%, rgb(59, 59, 59) 50%, rgb(71, 71, 71) 60%, rgb(51, 51, 51) 70%);
+    border: solid rgb(51, 51, 51) 5px;
+    box-shadow: 0.3px 2px 1px rgba(7, 7, 7, 0.5) inset,
+    -0.3px -0.7px 1px rgba(7, 7, 7, 0.5) inset,
+    0px 6px 10px rgba(7, 7, 7, 0.8),
+    0px 0px 10px rgba(7, 7, 7, 0.8);
+}
+[data-theme="dark"] div.menu-link-overlay{
+    background: linear-gradient(rgb(152, 35, 76), rgba(152, 35, 76, 0.6))
 }
 #mobile-menu-link p{
     font-family: "amatic", sans-serif;
@@ -260,10 +288,17 @@ div.menu-link-overlay{
     text-align: center;
 }
 @media screen and (max-width: 440px) {
-    #mobile-menu-link, div.menu-link-overlay{
+    #main-heading-home-link{
+        font-size: 34px;
+    }
+    #mobile-menu-link{
         height: 90px;
         width: 75px;
-        margin: -30px 5px 0px 0px
+        margin: -30px 5px 0px 0px;
+    }
+    div.menu-link-overlay{
+        height: 90px;
+        width: 75px;
     }
     #mobile-menu-link p{
         font-size: 26px;
@@ -289,25 +324,25 @@ header nav a{
     opacity: 0.5;
 }
 [data-theme="light"] #mobile-menu-link p, [data-theme="light"] header nav a{
-    color: rgb(106, 15, 32);
+    color: rgb(104, 1, 20);
     text-shadow: 
-    0px 0px 2px rgb(106, 15, 32, 0.7), 
-    0px 0px 4px rgb(106, 15, 32, 0.5),
-    0px 0px 4px rgb(106, 15, 32, 0.3);
+    0px 0px 8px rgba(174, 29, 53, 0.7), 
+    0px 0px 10px rgb(174, 29, 53, 0.7),
+    0px 0px 12px rgb(174, 29, 53, 0.5);
 }
 [data-theme="sepia"] #mobile-menu-link p, [data-theme="sepia"] header nav a{
-    color: rgb(27, 60, 53);
+    color: rgb(85, 0, 0);
     text-shadow: 
-    0px 0px 2px rgb(27, 60, 53, 0.7), 
-    0px 0px 4px rgb(27, 60, 53, 0.5),
-    0px 0px 4px rgb(27, 60, 53, 0.3);
+    0px 0px 8px rgba(68, 8, 8, 0.7), 
+    0px 0px 10px rgba(68, 8, 8, 0.5),
+    0px 0px 12px rgba(68, 8, 8, 0.3);
 }
 [data-theme="dark"] #mobile-menu-link p, [data-theme="dark"] header nav a{
-    color: rgb(101, 250, 255);
+    color: rgb(255, 103, 240);
     text-shadow: 
-    0px 0px 2px rgba(0, 142, 171, 0.7), 
-    0px 0px 4px rgb(0, 142, 171, 0.5),
-    0px 0px 4px rgb(0, 142, 171, 0.3);
+    0px 0px 8px rgba(208, 1, 187, 0.7), 
+    0px 0px 10px rgb(208, 1, 187, 0.5),
+    0px 0px 12px rgb(208, 1, 187, 0.3);
 }
 main{
     max-width: 900px;
@@ -696,13 +731,6 @@ footer{
     height: fit-content;
     text-align: center;
 }
-/* [data-theme="light"] #copyright-section{
-    color: rgb(0, 65, 34);
-    text-shadow: 
-    0px 0px 3px rgb(0, 122, 63), 
-    0px 0px 7px rgba(0, 122, 63, 0.4)
-} */
-
 #policy-section{
     display: flex;
     flex-direction: column;
@@ -757,68 +785,6 @@ footer{
     0px 0px 1px rgb(137, 84, 0), 
     0px 0px 5px rgba(137, 84, 0, 0.5);
     text-decoration: underline;
-}
-.policy-overlay{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow-y: scroll;
-    padding: 10px 20px 100px 20px;
-}
-#privacy-policy{
-    z-index: 1100;
-}
-#cookie-policy{
-    z-index: 4000;
-}
-[data-theme="dark"] .policy-overlay{
-    background: rgb(33, 33, 33);
-}
-[data-theme="sepia"] .policy-overlay{
-    background: #e5d4c3;
-}
-[data-theme="light"] .policy-overlay{
-    background: rgb(241, 240, 240);
-}
-[data-theme="dark"] .close-button--dark{
-    display: block;
-}
-[data-theme="dark"] .close-button--sepia, [data-theme="dark"] .close-button--light{
-    display: none;
-}
-[data-theme="sepia"] .close-button--sepia{
-    display: block;
-}
-[data-theme="sepia"] .close-button--dark, [data-theme="sepia"] .close-button--light{
-    display: none;
-}
-[data-theme="light"] .close-button--light{
-    display: block;
-}
-[data-theme="light"] .close-button--dark, [data-theme="light"] .close-button--sepia{
-    display: none;
-}
-.overlay-close-button{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-}
-#cookie-banner-container{
-    position: fixed;
-    bottom: 40px;
-    width: 100%;
-    z-index: 3000;
-}
-#cookie-banner{
-    max-width: 800px;
-    width: 80vw;
-    position: relative;
-    display: block;
-    margin: auto;
-    height: fit-content;
-    padding: 20px;
 }
 [data-theme="dark"] #cookie-banner{
     background: rgb(0, 55, 55);
