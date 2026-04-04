@@ -77,6 +77,20 @@ body{
 .partialFadeOut{
     animation: partialFadeOut 1s forwards;
 }
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeOut{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.fadeIn{
+    animation: fadeIn 1s forwards;
+}
+.fadeOut{
+    animation: fadeOut 1s forwards;
+}
 @media screen and (max-width: 800px) {
     body{
         padding: 20px 0px 50px 0px;
@@ -204,11 +218,19 @@ header{
     width: fit-content;
     z-index: 1000;
     position: relative;
+    padding: 0px 20px;
 }
 #main-heading-home-link{
     text-decoration: none;
     font-family: 'handwritten-text', serif;
     font-size: 36px;
+    width: fit-content
+}
+@media screen and (max-width: 400px) {
+    #main-heading-home-link{
+        width: 200px;
+        display: block;
+    }
 }
 [data-theme="light"] #main-heading-home-link{
     color: rgb(120, 0, 78);
@@ -234,13 +256,15 @@ header{
 #main-heading-writing-links{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     width: 100%;
     justify-content: space-around;
     font-family: 'playball', sans-serif;
     font-size: 30px;
     opacity: 0.8;
     cursor: pointer;
+}
+#main-heading-writing-links a{
+    margin: 5px;
 }
 [data-theme="light"] #stories-link{
     color: rgb(19, 18, 78);
@@ -253,16 +277,17 @@ header{
 }
 #menu-container{
     z-index: 2000;
-    margin: -10px 20px 0px 0px;
     height: 120px;
     width: 100px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    top: 50px;
+    right: 30px;
 }
-@media screen and (max-width: 800px) {
-    #menu-container{
-        margin: -30px 20px 0px 0px;
-    }
+#menu-link{
+    transform: rotate(-8deg);
+    position: relative;
+    z-index: 1000;
 }
 div.menu-link-overlay{
     height: 120px;
@@ -319,10 +344,12 @@ div.menu-link-overlay{
     #main-heading-home-link{
         font-size: 34px;
     }
+    #main-heading-writing-links{
+        font-size: 28px;
+    }
     #menu-container{
         height: 90px;
         width: 75px;
-        margin: -30px 5px 0px 0px;
     }
     div.menu-link-overlay{
         height: 90px;
@@ -332,51 +359,67 @@ div.menu-link-overlay{
         font-size: 26px;
         width: 75px;
     }
-    #main-heading-writing-links{
-        flex-wrap: wrap;
-    }
 }
 @keyframes expand{
     0% {
         scale: 1;
+        top: 50px;
+        right: 30px;
     }
     100% {
         scale: 2.5;
+        top: 150px;
+        right: 90px;
     }
 }
 .expand{
     animation: expand 2s forwards;
 }
+@keyframes contract{
+    0% {
+        scale: 2.5;
+        top: 150px;
+        right: 90px;
+    }
+    100% {
+        scale: 1;
+        top: 50px;
+        right: 30px;
+    }
+}
+.contract{
+    animation: contract 2s forwards;
+}
 #menu-container.expand nav{
-    z-index: 2000 !important;
-    position: relative;
     transform: rotate(-4deg);
 }
 #menu-container.expand a{
     font-size: 14px !important;
-    margin: 0px 5px 5px 20px !important;
-    width: fit-content !important;
+    margin: 0px 5px 5px 5px !important;
+    text-align: center;
 }
-#menu-container.expand p{
+#menu-overlay-close{
     font-size: 14px !important;
-    margin: 20px 5px 0px 5px !important;
-    position: relative;
-    z-index: 2000 !important;
+    margin: 10px 5px 10px 5px !important;
     transform: rotate(8deg);
+    position: relative;
+    z-index: 1000;
 }
 @media screen and (max-width: 440px){
-    #menu-container.expand p{
+    #menu-overlay-close{
         margin: 7px 5px 0px 5px !important;
         font-size: 13px !important;
     }
     #menu-container.expand a{
-        margin: 0px 5px 5px 20px !important;
+        margin: 0px 10px 5px 0px !important;
         font-size: 13px !important;
     }
 }
 header nav a{
     font-family: "amatic", sans-serif;
     display: block;
+    position: relative;
+    z-index: 1000;
 }
 [data-theme="light"] #menu-container p, [data-theme="light"] header nav a{
     color: rgb(104, 1, 20);

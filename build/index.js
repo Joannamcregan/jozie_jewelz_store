@@ -65,13 +65,37 @@ __webpack_require__.r(__webpack_exports__);
 
 class Menu {
   constructor() {
-    this.mobileMenu = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#mobile-menu');
-    this.mobileMenuLink = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#mobile-menu-link');
+    this.menuContainer = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-container');
+    this.menuNav = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-nav');
+    this.menuLink = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-link');
+    this.screenOverlay = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-screen-overlay');
+    this.close = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-overlay-close');
     this.events();
   }
   events(e) {
-    this.mobileMenuLink.on('click', e => {
-      console.log('clicked');
+    this.menuLink.on('click', () => {
+      this.screenOverlay.removeClass('hidden');
+      this.screenOverlay.addClass('partialFadeIn');
+      this.menuContainer.addClass('expand');
+      this.menuLink.addClass('hidden');
+      setTimeout(() => {
+        this.menuNav.removeClass('hidden');
+        this.screenOverlay.removeClass('partialFadeIn');
+      }, 2000);
+    });
+    this.close.on('click', () => {
+      this.menuNav.addClass('hidden');
+      this.menuContainer.removeClass('expand');
+      this.menuContainer.addClass('contract');
+      this.screenOverlay.addClass('partialFadeOut');
+      setTimeout(() => {
+        this.menuLink.removeClass('hidden');
+      }, 2000);
+      setTimeout(() => {
+        this.menuContainer.removeClass('contract');
+        this.screenOverlay.removeClass('partialFadeOut');
+        this.screenOverlay.addClass('hidden');
+      }, 2100);
     });
   }
 }

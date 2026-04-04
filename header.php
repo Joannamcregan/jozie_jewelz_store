@@ -43,7 +43,7 @@
         <p id="menu-link">menu</p>
         <div class="menu-link-overlay"></div>
         <div id="menu-nav" class="hidden">
-            <p>close</p>
+            <p id="menu-overlay-close">close</p>
             <nav>
             <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace') . '#about-me');?>">bio</a>
             <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace') . '#contact-info');?>">connect</a>
