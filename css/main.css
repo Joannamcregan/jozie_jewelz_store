@@ -45,8 +45,37 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.mobile{
-    display: none;
+#menu-screen-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 1000;
+}
+[data-theme="light"] #menu-screen-overlay{
+    background: #ebe7e7;
+}
+[data-theme="sepia"] #menu-screen-overlay{
+    background: #e2d8cd;
+}
+[data-theme="dark"] #menu-screen-overlay{
+    background: #202020;
+}
+@keyframes partialFadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 0.9;}
+}
+@keyframes partialFadeOut{
+    0% {opacity: 0.9;}
+    100% {opacity: 0;}
+}
+.partialFadeIn{
+    animation: partialFadeIn 1s forwards;
+}
+.partialFadeOut{
+    animation: partialFadeOut 1s forwards;
 }
 @media screen and (max-width: 800px) {
     body{
@@ -222,8 +251,8 @@ header{
 [data-theme="dark"] #stories-link{
     color: rgb(222, 203, 255);
 }
-#mobile-menu-link{
-    z-index: 1000;
+#menu-container{
+    z-index: 2000;
     margin: -10px 20px 0px 0px;
     height: 120px;
     width: 100px;
@@ -231,7 +260,7 @@ header{
     position: relative;
 }
 @media screen and (max-width: 800px) {
-    #mobile-menu-link{
+    #menu-container{
         margin: -30px 20px 0px 0px;
     }
 }
@@ -244,9 +273,9 @@ div.menu-link-overlay{
     bottom: 0px;
     right: 0px;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0.6;
 }
-[data-theme="light"] #mobile-menu-link{
+[data-theme="light"] #menu-container{
     background: linear-gradient(30deg, rgb(204, 204, 204), rgb(233, 232, 232) 40%, rgb(216, 216, 216) 50%, rgb(233, 232, 232) 60%, rgb(204, 204, 204) 70%);
     border: solid rgb(204, 204, 204) 5px;
     box-shadow: 0.3px 2px 1px rgba(92, 92, 92, 0.5) inset,
@@ -257,7 +286,7 @@ div.menu-link-overlay{
 [data-theme="light"] div.menu-link-overlay{
     background: linear-gradient(rgb(255, 248, 206), rgba(255, 248, 206, 0.6))
 }
-[data-theme="sepia"] #mobile-menu-link{
+[data-theme="sepia"] #menu-container{
     background: linear-gradient(30deg, rgb(181, 181, 181), rgb(218, 218, 218) 40%, rgb(202, 202, 202) 50%, rgb(218, 218, 218) 60%, rgb(181, 181, 181) 70%);
     border: solid rgb(181, 181, 181) 5px;
     box-shadow: 0.3px 2px 1px rgba(92, 92, 92, 0.5) inset,
@@ -268,7 +297,7 @@ div.menu-link-overlay{
 [data-theme="sepia"] div.menu-link-overlay{
     background: linear-gradient(rgb(252, 236, 201), rgba(252, 236, 201, 0.6))
 }
-[data-theme="dark"] #mobile-menu-link{
+[data-theme="dark"] #menu-container{
     background: linear-gradient(30deg, rgb(51, 51, 51), rgb(71, 71, 71) 40%, rgb(59, 59, 59) 50%, rgb(71, 71, 71) 60%, rgb(51, 51, 51) 70%);
     border: solid rgb(51, 51, 51) 5px;
     box-shadow: 0.3px 2px 1px rgba(7, 7, 7, 0.5) inset,
@@ -279,10 +308,9 @@ div.menu-link-overlay{
 [data-theme="dark"] div.menu-link-overlay{
     background: linear-gradient(rgb(152, 35, 76), rgba(152, 35, 76, 0.6))
 }
-#mobile-menu-link p{
+#menu-container p{
     font-family: "amatic", sans-serif;
     font-size: 34px;
-    transform: rotate(-8deg);
     text-decoration: underline;
     width: 100px;
     text-align: center;
@@ -291,7 +319,7 @@ div.menu-link-overlay{
     #main-heading-home-link{
         font-size: 34px;
     }
-    #mobile-menu-link{
+    #menu-container{
         height: 90px;
         width: 75px;
         margin: -30px 5px 0px 0px;
@@ -300,7 +328,7 @@ div.menu-link-overlay{
         height: 90px;
         width: 75px;
     }
-    #mobile-menu-link p{
+    #menu-container p{
         font-size: 26px;
         width: 75px;
     }
@@ -308,36 +336,63 @@ div.menu-link-overlay{
         flex-wrap: wrap;
     }
 }
-header nav{
-    width: fit-content;
-    margin-top: -20px;
+@keyframes expand{
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 2.5;
+    }
+}
+.expand{
+    animation: expand 2s forwards;
+}
+#menu-container.expand nav{
+    z-index: 2000 !important;
+    position: relative;
+    transform: rotate(-4deg);
+}
+#menu-container.expand a{
+    font-size: 14px !important;
+    margin: 0px 5px 5px 20px !important;
+    width: fit-content !important;
+}
+#menu-container.expand p{
+    font-size: 14px !important;
+    margin: 20px 5px 0px 5px !important;
+    position: relative;
+    z-index: 2000 !important;
+    transform: rotate(8deg);
+}
+@media screen and (max-width: 440px){
+    #menu-container.expand p{
+        margin: 7px 5px 0px 5px !important;
+        font-size: 13px !important;
+    }
+    #menu-container.expand a{
+        margin: 0px 5px 5px 20px !important;
+        font-size: 13px !important;
+    }
 }
 header nav a{
     font-family: "amatic", sans-serif;
-    font-size: 34px;
-    transform: rotate(-8deg);
     display: block;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 1000;
-    position: relative;
-    opacity: 0.5;
 }
-[data-theme="light"] #mobile-menu-link p, [data-theme="light"] header nav a{
+[data-theme="light"] #menu-container p, [data-theme="light"] header nav a{
     color: rgb(104, 1, 20);
     text-shadow: 
     0px 0px 8px rgba(174, 29, 53, 0.7), 
     0px 0px 10px rgb(174, 29, 53, 0.7),
     0px 0px 12px rgb(174, 29, 53, 0.5);
 }
-[data-theme="sepia"] #mobile-menu-link p, [data-theme="sepia"] header nav a{
+[data-theme="sepia"] #menu-container p, [data-theme="sepia"] header nav a{
     color: rgb(85, 0, 0);
     text-shadow: 
     0px 0px 8px rgba(68, 8, 8, 0.7), 
     0px 0px 10px rgba(68, 8, 8, 0.5),
     0px 0px 12px rgba(68, 8, 8, 0.3);
 }
-[data-theme="dark"] #mobile-menu-link p, [data-theme="dark"] header nav a{
+[data-theme="dark"] #menu-container p, [data-theme="dark"] header nav a{
     color: rgb(255, 103, 240);
     text-shadow: 
     0px 0px 8px rgba(208, 1, 187, 0.7), 

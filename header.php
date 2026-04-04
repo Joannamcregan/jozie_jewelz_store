@@ -39,14 +39,18 @@
             <a id="zines-link">e-zines</a>
         </div>
     </div>
-    <div tabindex="-1" id="mobile-menu-link">
-        <p>menu</p>
+    <div tabindex="-1" id="menu-container">
+        <p id="menu-link">menu</p>
         <div class="menu-link-overlay"></div>
-        <nav id="mobile-menu" class="hidden">
+        <div id="menu-nav" class="hidden">
+            <p>close</p>
+            <nav>
             <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace') . '#about-me');?>">bio</a>
-            <a href="<?php echo esc_url(site_url('/blog')); ?>">blog</a>
             <a href="<?php echo esc_url(site_url('/requiem-for-my-myspace') . '#contact-info');?>">connect</a>
+            <a href="<?php echo esc_url(site_url('/blog')); ?>">blog</a>
         </nav>
+        </div>
     </div>
 </header>
+<div id="menu-screen-overlay" class="hidden"></div>
 </div>
