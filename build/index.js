@@ -70,6 +70,8 @@ class Menu {
     this.menuLink = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-link');
     this.screenOverlay = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-screen-overlay');
     this.close = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#menu-overlay-close');
+    this.previewOverlay = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#single-product--preview-overlay');
+    this.closePreview = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#preview-overlay--close');
     this.events();
   }
   events(e) {
@@ -96,6 +98,9 @@ class Menu {
         this.screenOverlay.removeClass('partialFadeOut');
         this.screenOverlay.addClass('hidden');
       }, 2100);
+    });
+    this.closePreview.on('click', () => {
+      this.previewOverlay.addClass('hidden');
     });
   }
 }

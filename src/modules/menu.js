@@ -6,7 +6,9 @@ class Menu{
         this.menuNav = u('#menu-nav');
         this.menuLink = u('#menu-link');
         this.screenOverlay = u('#menu-screen-overlay');
-        this.close = u('#menu-overlay-close')
+        this.close = u('#menu-overlay-close');
+        this.previewOverlay = u('#single-product--preview-overlay');
+        this.closePreview = u('#preview-overlay--close');
         this.events();
     }
     events(e){
@@ -33,6 +35,9 @@ class Menu{
                 this.screenOverlay.removeClass('partialFadeOut');
                 this.screenOverlay.addClass('hidden');
             }, 2100);
+        });
+        this.closePreview.on('click', ()=>{
+            this.previewOverlay.addClass('hidden');
         })
     }
 }
