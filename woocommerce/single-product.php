@@ -63,7 +63,7 @@ get_header(); ?>
             <?php woocommerce_get_template( 'single-product-reviews.php' );
         ?></div>
     <?php get_template_part( 'template-parts/mode', 'selector' ); ?>
-    <div id="single-product--preview-overlay">
+    <div id="single-product--preview-overlay" class="hidden">
         <div id="preview-overlay--close">
             <p>close</p>
         </div>

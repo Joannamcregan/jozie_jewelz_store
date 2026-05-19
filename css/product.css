@@ -238,15 +238,13 @@ div.comment-form-rating select#rating{
     left: 20px;
     height: 80vh;
     z-index: 3000;
-    background: white;
-    box-shadow: 0px 0px 5px rgba(79, 79, 79, 1);
 }
 div#preview-overlay--close{
-    background: white;
     position: absolute;
     top: 0px;
     right: 0px;
     left: 0px;
+    cursor: pointer;
 }
 div#preview-overlay--close p{
     text-align: right;
@@ -273,4 +271,11 @@ div#preview-overlay--preview{
 }
 div#preview-overlay--preview p{
     padding-right: 20px;
+}
+[data-theme="light"] #single-product--preview-overlay{
+    background: #f6f2f2;
+    box-shadow: 0px 0px 5px rgba(79, 79, 79, 1);
+}
+[data-theme="light"] div#preview-overlay--close{
+    background: #f6f2f2;
 }
