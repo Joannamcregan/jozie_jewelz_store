@@ -146,6 +146,7 @@ div.blog-comments input[type="submit"]{
     margin: 10px auto 30px auto;
     display: block;
     font-family: 'rocksalt', sans-serif;
+    cursor: pointer;
 }
 form#commentform span#email-notes, form#commentform span#required-field-message{
     display: block;

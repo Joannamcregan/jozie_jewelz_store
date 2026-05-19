@@ -63,6 +63,16 @@ get_header(); ?>
             <?php woocommerce_get_template( 'single-product-reviews.php' );
         ?></div>
     <?php get_template_part( 'template-parts/mode', 'selector' ); ?>
+    <div id="single-product--preview-overlay">
+        <div id="preview-overlay--close">
+            <p>close</p>
+        </div>
+        <div id="preview-overlay--preview-wrapper">
+            <div id="preview-overlay--preview">
+                <?php echo wpautop(get_post_meta($post->ID, 'book_excerpt', true)); ?>
+            </div>
+        </div>
+    </div>
 </main>
 <?php get_template_part( 'template-parts/ceiling', 'lights' );
 get_footer();
