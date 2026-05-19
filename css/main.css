@@ -408,6 +408,7 @@ div.menu-link-overlay{
     transform: rotate(8deg);
     position: relative;
     z-index: 1000;
+    cursor: pointer;
 }
 @media screen and (max-width: 440px){
     #menu-overlay-close{

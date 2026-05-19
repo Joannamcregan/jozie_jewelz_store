@@ -273,8 +273,22 @@ div#preview-overlay--preview p{
 }
 [data-theme="light"] #single-product--preview-overlay{
     background: #f6f2f2;
-    box-shadow: 0px 0px 5px rgba(79, 79, 79, 1);
+    box-shadow: 0px 0px 5px #535353;
 }
 [data-theme="light"] div#preview-overlay--close{
     background: #f6f2f2;
+}
+[data-theme="sepia"] #single-product--preview-overlay{
+    background: #f1e7dd;
+    box-shadow: 0px 0px 5px #3d3d3d;
+}
+[data-theme="sepia"] div#preview-overlay--close{
+    background: #f1e7dd;
+}
+[data-theme="dark"] #single-product--preview-overlay{
+    background: #2b2b2b;
+    box-shadow: 0px 0px 5px #000000, 0px 0px 4px #000000, 0px 0px 3px #000000;
+}
+[data-theme="dark"] div#preview-overlay--close{
+    background: #2b2b2b;
 }
