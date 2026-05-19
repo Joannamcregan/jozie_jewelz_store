@@ -122,12 +122,13 @@ class Preview {
     this.previewOverlay = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#single-product--preview-overlay');
     this.closePreview = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('#preview-overlay--close');
     this.openPreview = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('p.sample-link');
+    this.body = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('body');
     this.events();
   }
   events(e) {
     this.openPreview.on('click', () => {
-      console.log('called open');
       this.previewOverlay.addClass('fadeIn');
+      this.body.addClass('no-scroll');
       setTimeout(() => {
         this.previewOverlay.removeClass('hidden');
       }, 100);
@@ -136,8 +137,8 @@ class Preview {
       }, 1100);
     });
     this.closePreview.on('click', () => {
-      console.log('called close');
       this.previewOverlay.addClass('fadeOut');
+      this.body.removeClass('no-scroll');
       setTimeout(() => {
         this.previewOverlay.addClass('hidden');
       }, 1000);

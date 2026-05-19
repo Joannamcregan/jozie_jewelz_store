@@ -167,6 +167,9 @@ strong{
 .hidden{
     display: none !important;
 }
+.no-scroll {
+    overflow: hidden !important;
+}
 .handwritten-text{
     font-family: 'handwritten-text', sans-serif;
 }

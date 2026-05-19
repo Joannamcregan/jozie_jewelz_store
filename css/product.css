@@ -1,9 +1,8 @@
-main.single-product div.type-product{
-    border: solid green 2px;
-}
 main.single-product div.type-product img.wp-post-image{
     width: 280px;
     height: auto;
+    display: block;
+    margin: auto;
 }
 div#other-retailers-section{
     border: solid red 2px;
