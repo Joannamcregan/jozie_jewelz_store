@@ -1,6 +1,36 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/modules/image.js"
+/*!******************************!*\
+  !*** ./src/modules/image.js ***!
+  \******************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../../umbrella.min.js */ "./umbrella.min.js");
+/* harmony import */ var _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_umbrella_min_js__WEBPACK_IMPORTED_MODULE_0__);
+
+class Image {
+  constructor() {
+    this.galleryImageLink = _umbrella_min_js__WEBPACK_IMPORTED_MODULE_0___default()('.woocommerce-product-gallery__image a');
+    this.events();
+  }
+  events(e) {
+    this.galleryImageLink.on('click', e => {
+      console.log('clicked an image');
+      e.preventDefault();
+    });
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Image);
+
+/***/ },
+
 /***/ "./src/modules/main.js"
 /*!*****************************!*\
   !*** ./src/modules/main.js ***!
@@ -568,6 +598,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_rating__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/rating */ "./src/modules/rating.js");
 /* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu */ "./src/modules/menu.js");
 /* harmony import */ var _modules_preview__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/preview */ "./src/modules/preview.js");
+/* harmony import */ var _modules_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/image */ "./src/modules/image.js");
+
 
 
 
@@ -576,6 +608,7 @@ const frontPage = new _modules_main__WEBPACK_IMPORTED_MODULE_0__["default"]();
 const rating = new _modules_rating__WEBPACK_IMPORTED_MODULE_1__["default"]();
 const menu = new _modules_menu__WEBPACK_IMPORTED_MODULE_2__["default"]();
 const preview = new _modules_preview__WEBPACK_IMPORTED_MODULE_3__["default"]();
+const image = new _modules_image__WEBPACK_IMPORTED_MODULE_4__["default"]();
 })();
 
 /******/ })()
