@@ -795,3 +795,21 @@ div.post-flyer-2{
     -0px 2px 2px rgba(7, 7, 7, 0.4),
     0px 2.5px 2px rgba(7, 7, 7, 0.4);
 }
+.entry-summary .shelf{
+    width: 290px;
+    height: 20px;
+    border-radius: 3px;
+    margin: auto;
+}
+[data-theme="light"] .entry-summary .shelf{
+    background: rgb(239, 238, 237);
+    box-shadow: #5c5c5c 0px 2px 5px, #5c5c5c 0px 4px 10px;
+}
+[data-theme="sepia"] .entry-summary .shelf{
+    background: #c3af9f;
+    box-shadow: #4f4f4f 0px 2px 5px, #4f4f4f 0px 4px 10px;
+}
+[data-theme="dark"] .entry-summary .shelf{
+    background-image: linear-gradient(to right, rgb(51, 22, 24), rgb(78, 18, 18), rgb(51, 22, 24));
+    box-shadow: #000000 0px 2px 5px, #000000 0px 4px 10px;
+}

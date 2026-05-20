@@ -94,9 +94,11 @@ function jozie_read_sample(){
     $sample = get_post_meta($product_id, 'book_excerpt', true);
     if ($sample){
         ?><p class="sample-link">read a sample</p>
-        <div class="sample-div hidden"><?php echo $sample ?></div>
-    <?php } else{
-        echo 'nope!';
-    }
+    <?php } 
 }
-add_action( 'woocommerce_single_product_summary', 'jozie_read_sample', 30);
+add_action( 'woocommerce_single_product_summary', 'jozie_read_sample', 6);
+
+function jozie_shelf_it(){
+    echo '<div class="shelf"></div>';
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_shelf_it', 4);

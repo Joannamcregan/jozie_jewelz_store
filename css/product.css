@@ -1,9 +1,31 @@
 main.single-product div.type-product img.wp-post-image{
-    width: 280px;
+    width: 250px;
     height: auto;
     display: block;
     margin: auto;
 }
+[data-theme="light"] main.single-product div.type-product img.wp-post-image{
+    box-shadow: 
+    1px -1px 5px #5c5c5c,
+    2px -2px 10px #5c5c5c,
+    -1px 1px 5px #5c5c5c,
+    -2px 0px 10px #5c5c5c;
+}
+[data-theme="sepia"] main.single-product div.type-product img.wp-post-image{
+    box-shadow: 
+    1px -1px 5px #4f4f4f,
+    2px -2px 10px #4f4f4f,
+    -1px 1px 5px #4f4f4f,
+    -2px 0px 10px #4f4f4f;
+}
+[data-theme="dark"] main.single-product div.type-product img.wp-post-image{
+    box-shadow: 
+    1px -1px 5px #070707,
+    2px -2px 10px #070707,
+    -1px 1px 5px #070707,
+    -2px 0px 10px #070707;
+}
+
 div#other-retailers-section{
     border: solid red 2px;
 }
