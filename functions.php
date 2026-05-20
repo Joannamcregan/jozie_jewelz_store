@@ -101,4 +101,14 @@ add_action( 'woocommerce_single_product_summary', 'jozie_read_sample', 6);
 function jozie_shelf_it(){
     echo '<div class="shelf"></div>';
 }
-add_action( 'woocommerce_single_product_summary', 'jozie_shelf_it', 4);
+add_action( 'woocommerce_single_product_summary', 'jozie_shelf_it', 3);
+
+function jozie_open_book_details_div(){
+    echo '<div class="book-title-details">';
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_open_book_details_div', 4);
+
+function jozie_close_div(){
+    echo '</div>';
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_close_div', 9);
