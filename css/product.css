@@ -314,3 +314,28 @@ div#preview-overlay--preview p{
 [data-theme="dark"] div#preview-overlay--close{
     background: #2b2b2b;
 }
+div.book-title-details-wrapper{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    margin: 20px auto;
+    background: linear-gradient(330deg, rgb(193, 136, 132), rgb(224, 173, 169) 10%, rgb(224, 173, 169) 30%, rgb(255, 238, 214) 50%, rgb(224, 173, 169) 70%, rgb(224, 173, 169) 90%, rgb(193, 136, 132));
+    box-shadow: 0.3px 2px 1px rgba(173, 173, 173, 0.5) inset,
+    -0.3px -0.7px 1px rgba(173, 173, 173, 0.5) inset,
+    0px 6px 10px rgba(173, 173, 173, 0.8),
+    0px 0px 10px rgba(173, 173, 173, 0.8);
+    padding: 20px;
+}
+div.book-title-details{
+    padding: 20px;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    text-align: right;
+}
+[data-theme="light"] div.book-title-details{
+    background: #f5f5f1;
+}
+[data-theme="sepia"] div.book-title-details{
+    background: #DEA193;
+}
