@@ -87,7 +87,7 @@ function jozie_product_formats(){
         <?php }
     }
 }
-add_action( 'woocommerce_single_product_summary', 'jozie_product_formats', 9);
+add_action( 'woocommerce_single_product_summary', 'jozie_product_formats', 7);
 
 function jozie_read_sample(){
     $product_id = get_the_ID();
@@ -97,6 +97,11 @@ function jozie_read_sample(){
     <?php } 
 }
 add_action( 'woocommerce_single_product_summary', 'jozie_read_sample', 6);
+
+function jozie_open_purchase_section_div(){
+    echo '<div class="single-product-purchase-section">';
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_open_purchase_section_div', 9);
 
 function jozie_other_retailers(){
     $product_id = get_the_ID();
@@ -122,6 +127,7 @@ function jozie_other_retailers(){
         }
         echo '</p></div>';
     }
+    echo '</div>'; //closing the single-product-purchase-section div
 }
 add_action( 'woocommerce_single_product_summary', 'jozie_other_retailers', 30);
 
@@ -140,4 +146,4 @@ function jozie_close_book_details_div(){
     echo '</div>';
     echo '</div>';
 }
-add_action( 'woocommerce_single_product_summary', 'jozie_close_book_details_div', 9);
+add_action( 'woocommerce_single_product_summary', 'jozie_close_book_details_div', 8);

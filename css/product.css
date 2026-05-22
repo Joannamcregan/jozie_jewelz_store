@@ -25,11 +25,17 @@ main.single-product div.type-product img.wp-post-image{
     -1px 1px 5px #070707,
     -2px 0px 10px #070707;
 }
-
 div#other-retailers-section{
     border: solid red 2px;
 }
-
+div#other-retailers-section p{
+    text-align: center;
+    margin: 5px;
+}
+div#other-retailers-section span{
+    margin: 0px 10px;
+    white-space: nowrap;
+}
 div.product div.summary div.woocommerce-product-rating{
     display: none;
 }
