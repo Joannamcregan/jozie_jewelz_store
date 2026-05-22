@@ -31,27 +31,6 @@ get_header(); ?>
 		 *
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
-        $amazon_link = get_post_meta($post->ID, 'amazon_link', true);
-        $barnes_and_noble_link = get_post_meta($post->ID, 'barnes_and_noble_link', true);
-        $kobo_link = get_post_meta($post->ID, 'kobo_link', true);
-        $bookshop_link = get_post_meta($post->ID, 'bookshop_link', true);
-        if ($amazon_link != '' || $barnes_and_noble_link != '' || $barnes_and_noble_link != '' || $kobo_link != ''){
-            ?><div id="other-retailers-section">
-                <p>Also available from the following retailers:</p>
-                <?php if ($bookshop_link != ''){
-                    ?><p><a target="_blank" href="<?php echo $bookshop_link; ?>">Bookshop.org</a></p>
-                <?php }
-                if ($amazon_link != ''){
-                    ?><p><a target="_blank" href="<?php echo $amazon_link; ?>">Amazon</a></p>
-                <?php }
-                if ($barnes_and_noble_link != ''){
-                    ?><p><a target="_blank" href="<?php echo $barnes_and_noble_link ?>">Barnes & Noble</a></p>
-                <?php }
-                if ($kobo_link != ''){
-                    ?><p><a target="_blank" href="<?php echo $kobo_link; ?>">Kobo</a></p>
-                <?php }
-            ?></div>
-        <?php }
         ?><div class="single-content">
             <?php echo wpautop(the_content());
             ?><div class="single-top-left-tape tape"></div>

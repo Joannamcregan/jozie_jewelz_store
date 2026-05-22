@@ -98,6 +98,33 @@ function jozie_read_sample(){
 }
 add_action( 'woocommerce_single_product_summary', 'jozie_read_sample', 6);
 
+function jozie_other_retailers(){
+    $product_id = get_the_ID();
+    $amazon_link = get_post_meta($product_id, 'amazon_link', true);
+    $barnes_and_noble_link = get_post_meta($product_id, 'barnes_and_noble_link', true);
+    $kobo_link = get_post_meta($product_id, 'kobo_link', true);
+    $bookshop_link = get_post_meta($product_id, 'bookshop_link', true);
+    if ($amazon_link != '' || $barnes_and_noble_link != '' || $barnes_and_noble_link != '' || $kobo_link != ''){
+        echo '<div id="other-retailers-section">';
+        echo '<p>Also available from the following retailers:</p>';
+        echo '<p>';
+        if ($bookshop_link != ''){
+            echo '<span><a target="_blank" href="<?php echo $bookshop_link; ?>">Bookshop.org</a></span>';
+        }
+        if ($amazon_link != ''){
+            echo '<span><a target="_blank" href="<?php echo $amazon_link; ?>">Amazon</a></span>';
+        }
+        if ($barnes_and_noble_link != ''){
+            echo '<span><a target="_blank" href="<?php echo $barnes_and_noble_link ?>">Barnes & Noble</a></span>';
+        }
+        if ($kobo_link != ''){
+            echo '<span><a target="_blank" href="<?php echo $kobo_link; ?>">Kobo</a></s>';
+        }
+        echo '</p></div>';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_other_retailers', 30);
+
 function jozie_shelf_it(){
     echo '<div class="shelf"></div>';
 }
