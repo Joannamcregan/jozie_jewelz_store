@@ -340,6 +340,28 @@ div.book-title-details{
     box-shadow: 1px 2px 1px rgba(173, 173, 173, 0.5) inset,
     -1px -2px 1px rgba(173, 173, 173, 0.5) inset;
 }
-[data-theme="sepia"] div.book-title-details{
-    background: #DEA193;
+[data-theme="sepia"] div.book-title-details-wrapper{
+    background: linear-gradient(330deg, rgb(151, 65, 59), rgb(200, 90, 82) 10%, rgb(200, 90, 82) 30%, rgb(244, 172, 142) 50%, rgb(200, 90, 82) 70%, rgb(200, 90, 82) 90%, rgb(151, 65, 59));
+    box-shadow: 0.3px 2px 1px rgba(131, 131, 117, 0.5) inset,
+    -0.3px -0.7px 1px rgba(131, 131, 117, 0.5) inset,
+    0px 6px 10px rgba(131, 131, 117, 0.8),
+    0px 0px 10px rgba(131, 131, 117, 0.8);
 }
+[data-theme="sepia"] div.book-title-details{
+    background: linear-gradient(330deg, #efe3d7 40%, #f8ede2 50%, #efe3d7 60%);
+    box-shadow: 1px 2px 1px rgba(131, 131, 131, 0.5) inset,
+    -1px -2px 1px rgba(131, 131, 131, 0.5) inset;
+}
+[data-theme="dark"] div.book-title-details-wrapper{
+    background: linear-gradient(330deg, rgb(55, 11, 27), rgb(77, 16, 37) 10%, rgb(77, 16, 37) 30%, rgb(155, 47, 78) 50%, rgb(77, 16, 37) 70%, rgb(77, 16, 37) 90%, rgb(55, 11, 27));
+    box-shadow: 0.3px 2px 1px rgba(9, 9, 9, 0.5) inset,
+    -0.3px -0.7px 1px rgba(0, 0, 0, 0.5) inset,
+    0px 6px 10px rgba(0, 0, 0, 0.8),
+    0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+[data-theme="dark"] div.book-title-details{
+    background: linear-gradient(330deg, #2b2b2b 40%, rgb(58, 57, 57) 50%, #2b2b2b 60%);
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5) inset,
+    -1px -2px 1px rgba(0, 0, 0, 0.5) inset;
+}
+/* linear-gradient(rgb(211, 70, 105), rgb(252, 155, 114) 30%, rgb(152, 35, 76)) */
