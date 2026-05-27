@@ -64,7 +64,7 @@ function jozie_product_formats(){
     $cats = wp_get_post_terms( $product_id, 'product_cat');
     if ($cats){
         $cat = $cats[0];
-        echo '<p>This is book is in ' .  $cat->name . ' format.';        
+        echo '<p class="single-product-format">This is book is in ' .  $cat->name . ' format.';        
         $alternates = get_post_meta($product_id, 'other_format', true);
         if ($alternates){
             ?><div class="alternate-section">
@@ -93,10 +93,31 @@ function jozie_read_sample(){
     $product_id = get_the_ID();
     $sample = get_post_meta($product_id, 'book_excerpt', true);
     if ($sample){
-        ?><p class="sample-link">read a sample</p>
-    <?php } 
+        echo '<p class="sample-link">read a sample</p>';
+    } 
 }
 add_action( 'woocommerce_single_product_summary', 'jozie_read_sample', 6);
+
+function jozie_heat_and_triggers(){
+    $product_id = get_the_ID();
+    $trigger_warning = get_post_meta($product_id, 'trigger_warning', true);
+    $heat_level = get_post_meta($product_id, 'heat_level', true);
+    if ($trigger_warning || $heat_level){
+        echo '<div class="heat-and-triggers-section">';
+        if ($trigger_warning){
+            echo '<div class="triggers-section">';
+            echo $trigger_warning;
+            echo '</div>';
+        }
+        if ($heat_level){
+            echo '<div class="heat-section">';
+            echo $heat_level;
+            echo '</div>';
+        }
+        echo '</div>';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'jozie_heat_and_triggers', 31);
 
 function jozie_open_purchase_section_div(){
     echo '<div class="single-product-purchase-section">';

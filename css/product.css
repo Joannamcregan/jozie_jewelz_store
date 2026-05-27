@@ -330,6 +330,7 @@ div.book-title-details-wrapper{
 div.book-title-details{
     padding: 20px;
     height: fit-content;
+    min-height: 250px;
     width: fit-content;
     position: relative;
     text-align: right;
@@ -370,4 +371,17 @@ div.book-title-details{
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5) inset,
     -1px -2px 1px rgba(0, 0, 0, 0.5) inset;
 }
-/* linear-gradient(rgb(211, 70, 105), rgb(252, 155, 114) 30%, rgb(152, 35, 76)) */
+div.book-title-details h1{
+    margin-bottom: 10px;
+}
+.single-product-format{
+    margin: 0px 5px 0px 5px;
+}
+.sample-link{
+    margin: 5px 5px 50px 5px;
+    text-decoration: underline;
+}
+.triggers-section{
+    border: solid teal 2px;
+    margin: 20px auto;
+}
