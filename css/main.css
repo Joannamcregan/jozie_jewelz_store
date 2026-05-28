@@ -509,6 +509,18 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+@media screen and (max-width: 590px){
+    .book-section-wrap-reverse{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .book-shelf-section{
+        margin-bottom: 20px !important;
+    }
+    .book-flyer-section{
+        padding: 10px;
+    }
+}
 .book-section .book-cover{
     margin: auto;
     display: block;

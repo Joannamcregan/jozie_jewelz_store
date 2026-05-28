@@ -381,7 +381,17 @@ div.book-title-details h1{
     margin: 5px 5px 50px 5px;
     text-decoration: underline;
 }
+.heat-and-triggers-section{
+    border: solid goldenrod 2px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 .triggers-section{
     border: solid teal 2px;
+    margin: 20px auto;
+}
+.heat-section{
+    border: solid indigo 2px;
     margin: 20px auto;
 }
