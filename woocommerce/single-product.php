@@ -47,7 +47,7 @@ get_header(); ?>
             <p>close</p>
         </div>
         <div id="preview-overlay--preview-wrapper" class="preview-overlay--preview-wrapper">
-            <div id="preview-overlay--preview">
+            <div class="preview-overlay--preview">
                 <?php echo wpautop(get_post_meta($post->ID, 'book_excerpt', true)); ?>
             </div>
         </div>

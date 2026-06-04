@@ -273,14 +273,14 @@ div.preview-overlay--preview-wrapper{
     right: 10px;
     padding: 0px;
 }
-div#preview-overlay--preview{
+div.preview-overlay--preview{
     overflow-y: scroll;
-    height: 70vh;
+    height: 65vh;
     width: 600px;
     max-width: 95%;
-    margin: auto;
+    margin: 10px auto;
 }
-div#preview-overlay--preview p{
+div.preview-overlay--preview p{
     padding-right: 20px;
 }
 div.preview-overlay--close{
@@ -288,8 +288,8 @@ div.preview-overlay--close{
     max-width: 95%;
     text-align: right;
     margin: auto;
-    padding-bottom: 20px;
     padding-right: 40px;
+    height: fit-content;
 }
 [data-theme="light"] .single-product--preview-overlay{
     background: #f6f2f2;
