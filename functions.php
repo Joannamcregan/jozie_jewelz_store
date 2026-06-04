@@ -106,12 +106,13 @@ function jozie_heat_and_triggers(){
         echo '<div class="heat-and-triggers-section">';
         if ($trigger_warning){
             echo '<div class="triggers-section">';
-            echo $trigger_warning;
+            echo '<p>Warning! This book contains content that may be triggering. </p><p class="view-trigger-warning-link">view triggers</p>';
             echo '</div>';
+            echo '<div id="trigger-warning-content" class="hidden single-product--preview-overlay"><div class="preview-overlay--close" id="close-trigger-warning"><p>close</p></div><div class="preview-overlay--preview-wrapper"><h2>Trigger Warning</h2>' . $trigger_warning . '</div></div>';
         }
         if ($heat_level){
             echo '<div class="heat-section">';
-            echo $heat_level;
+            echo '<p>Heat level: ' . $heat_level . '</p>';
             echo '</div>';
         }
         echo '</div>';
