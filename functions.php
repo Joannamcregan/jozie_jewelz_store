@@ -121,7 +121,7 @@ function jozie_heat_and_triggers(){
 add_action( 'woocommerce_single_product_summary', 'jozie_heat_and_triggers', 31);
 
 function jozie_open_purchase_section_div(){
-    echo '<div class="single-product-purchase-section">';
+    echo '<div class="single-product-purchase-section-wrapper"><div class="single-product-purchase-section">';
 }
 add_action( 'woocommerce_single_product_summary', 'jozie_open_purchase_section_div', 9);
 
@@ -134,7 +134,7 @@ function jozie_other_retailers(){
     if ($amazon_link != '' || $barnes_and_noble_link != '' || $barnes_and_noble_link != '' || $kobo_link != ''){
         echo '<div id="other-retailers-section">';
         echo '<p>Also available from the following retailers:</p>';
-        echo '<p>';
+        echo '<div id="other-retailers">';
         if ($bookshop_link != ''){
             echo '<span><a target="_blank" href="<?php echo $bookshop_link; ?>">Bookshop.org</a></span>';
         }
@@ -147,9 +147,10 @@ function jozie_other_retailers(){
         if ($kobo_link != ''){
             echo '<span><a target="_blank" href="<?php echo $kobo_link; ?>">Kobo</a></s>';
         }
-        echo '</p></div>';
+        echo '</div></div>';
     }
     echo '</div>'; //closing the single-product-purchase-section div
+    echo '</div>'; //closing the wrapper div
 }
 add_action( 'woocommerce_single_product_summary', 'jozie_other_retailers', 30);
 

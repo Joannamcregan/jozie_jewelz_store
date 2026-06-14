@@ -25,15 +25,66 @@ main.single-product div.type-product img.wp-post-image{
     -1px 1px 5px #070707,
     -2px 0px 10px #070707;
 }
+.single-product-purchase-section-wrapper{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 35px;
+    margin: 20px auto;
+}
+[data-theme="light"] .single-product-purchase-section-wrapper{
+    background: linear-gradient(330deg, rgb(233, 233, 233), rgb(248, 248, 248) 30%, rgb(234, 233, 233) 50%, rgb(233, 233, 233) 70%, rgb(233, 233, 233));
+    box-shadow: 0.3px 2px 1px rgba(173, 173, 173, 0.5) inset,
+    -0.3px -0.7px 1px rgba(173, 173, 173, 0.5) inset,
+    0px 6px 10px rgba(173, 173, 173, 0.8),
+    0px 0px 10px rgba(173, 173, 173, 0.8),
+    0px 10px 20px rgba(173, 173, 173, 0.8),
+    0px 5px 20px rgba(173, 173, 173, 0.8);
+}
+.single-product-purchase-section{
+    padding: 20px;
+    border-radius: 20px;
+}
+[data-theme="light"] .single-product-purchase-section{
+    background: linear-gradient(330deg, rgb(242, 242, 242), rgb(242, 242, 242) 30%, white 50%, rgb(242, 242, 242) 70%, rgb(242, 242, 242));
+}
+div.single-product-purchase-section p.price{
+    text-align: center;
+    font-size: 24px;
+}
+div.single-product-purchase-section input[type="number"]{
+    margin: 10px auto;
+    display: block;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+div.single-product-purchase-section button{
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: rgb(210, 210, 243);
+}
 div#other-retailers-section{
-    border: solid red 2px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+[data-theme="light"] div#other-retailers-section{
+    border-top: solid rgb(223, 223, 223) 2px;
 }
 div#other-retailers-section p{
     text-align: center;
     margin: 5px;
 }
-div#other-retailers-section span{
-    margin: 0px 10px;
+div#other-retailers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div#other-retailers span{
+    margin: 5px 10px;
     white-space: nowrap;
 }
 div.product div.summary div.woocommerce-product-rating{
@@ -431,7 +482,7 @@ p.view-trigger-warning-link{
     -0px 2px 2px rgba(92, 92, 92, 0.2),
     0px 2.5px 2px rgba(92, 92, 92, 0.2);
 }
-[data-theme="media"] .heat-section{
+[data-theme="sepia"] .heat-section{
     background: rgb(156, 195, 151);
     box-shadow: 
     1px -0.5px 2px rgba(79, 79, 79, 0.2),
